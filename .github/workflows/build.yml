@@ -1,0 +1,238 @@
+name: Build desktop installers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, bugs-features]
+  pull_request:
+
+jobs:
+  linux:
+    name: Linux x64 installers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: recursive
+      - uses: subosito/flutter-action@v2.22.0
+        with:
+          channel: stable
+          cache: false
+      - name: Install build and packaging dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsecret-1-dev imagemagick
+      - run: flutter pub get
+      - name: Create Dart defines
+        env:
+          API_KEY: ${{ secrets.MESHMAPPER_API_KEY }}
+        run: |
+          python3 -c 'import json, os; json.dump({"API_KEY": os.environ.get("API_KEY", "")}, open(os.path.join(os.environ["RUNNER_TEMP"], "linux-defines.json"), "w"))'
+      - name: Build Linux release bundle
+        run: flutter build linux --release --no-pub --dart-define-from-file="$RUNNER_TEMP/linux-defines.json"
+      - name: Build Debian package
+        run: |
+          set -euo pipefail
+          version="$(awk '/^version:/{print $2; exit}' pubspec.yaml | cut -d+ -f1)"
+          package_root="$RUNNER_TEMP/deb"
+          mkdir -p "$package_root/DEBIAN" "$package_root/opt/gulfcoast-mesh" "$package_root/usr/bin" "$package_root/usr/share/applications" "$package_root/usr/share/icons/hicolor/256x256/apps"
+          cp -a build/linux/x64/release/bundle/. "$package_root/opt/gulfcoast-mesh/"
+          printf '#!/bin/sh\nexec /opt/gulfcoast-mesh/gulf_coast_mesh_app "$@"\n' > "$package_root/usr/bin/gulfcoast-mesh"
+          chmod 755 "$package_root/usr/bin/gulfcoast-mesh"
+          cp installer/linux/gulfcoast-mesh.desktop "$package_root/usr/share/applications/gulfcoast-mesh.desktop"
+          convert mesh-icon.png -resize 256x256 "$package_root/usr/share/icons/hicolor/256x256/apps/gulfcoast-mesh.png"
+          cat > "$package_root/DEBIAN/control" <<EOF
+          Package: gulfcoast-mesh
+          Version: $version
+          Section: net
+          Priority: optional
+          Architecture: amd64
+          Maintainer: Gulf Coast Mesh
+          Description: MeshCore LoRa mesh messenger
+          EOF
+          dpkg-deb --build --root-owner-group "$package_root" "$RUNNER_TEMP/gulfcoast-mesh_${version}_amd64.deb"
+          dpkg-deb --info "$RUNNER_TEMP/gulfcoast-mesh_${version}_amd64.deb"
+          dpkg-deb --contents "$RUNNER_TEMP/gulfcoast-mesh_${version}_amd64.deb" | grep -q 'usr/bin/gulfcoast-mesh'
+      - name: Build portable AppImage
+        run: |
+          set -euo pipefail
+          version="$(awk '/^version:/{print $2; exit}' pubspec.yaml | cut -d+ -f1)"
+          appdir="$RUNNER_TEMP/AppDir"
+          mkdir -p "$appdir/usr"
+          cp -a build/linux/x64/release/bundle/. "$appdir/usr/"
+          cp installer/linux/AppRun "$appdir/AppRun"
+          cp installer/linux/gulfcoast-mesh.desktop "$appdir/gulfcoast-mesh.desktop"
+          chmod +x "$appdir/AppRun"
+          convert mesh-icon.png -resize 256x256 "$appdir/gulfcoast-mesh.png"
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/appimagetool" https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
+          chmod +x "$RUNNER_TEMP/appimagetool"
+          ARCH=x86_64 APPIMAGE_EXTRACT_AND_RUN=1 "$RUNNER_TEMP/appimagetool" "$appdir" "$RUNNER_TEMP/GulfCoastMesh-${version}-x86_64.AppImage"
+          test -s "$RUNNER_TEMP/GulfCoastMesh-${version}-x86_64.AppImage"
+      - name: Upload Linux installers
+        uses: actions/upload-artifact@v5
+        with:
+          name: gulfcoast-mesh-linux-x64-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/gulfcoast-mesh_*.deb
+            ${{ runner.temp }}/GulfCoastMesh-*-x86_64.AppImage
+          retention-days: 14
+          if-no-files-found: error
+      - name: Remove Dart defines
+        if: always()
+        run: rm -f "$RUNNER_TEMP/linux-defines.json"
+
+  windows:
+    name: Windows x64 installer
+    runs-on: windows-latest
+    env:
+      SIGNING_ENABLED: ${{ secrets.WINDOWS_SIGNING_PFX_BASE64 != '' && secrets.WINDOWS_SIGNING_PUBLISHER != '' }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: recursive
+      - uses: subosito/flutter-action@v2.22.0
+        with:
+          channel: stable
+          cache: false
+      - run: flutter pub get
+      - name: Create Dart defines
+        shell: pwsh
+        env:
+          API_KEY: ${{ secrets.MESHMAPPER_API_KEY }}
+        run: |
+          $payload = @{ API_KEY = $env:API_KEY } | ConvertTo-Json -Compress
+          [System.IO.File]::WriteAllText("$env:RUNNER_TEMP\windows-defines.json", $payload, [System.Text.UTF8Encoding]::new($false))
+      - name: Build Windows release bundle
+        shell: pwsh
+        run: flutter build windows --release --no-pub --dart-define-from-file="$env:RUNNER_TEMP\windows-defines.json"
+      - name: Create MSIX package
+        shell: pwsh
+        env:
+          SIGNING_PUBLISHER: ${{ secrets.WINDOWS_SIGNING_PUBLISHER }}
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:SIGNING_PUBLISHER)) {
+            dart run msix:create
+          } else {
+            dart run msix:create --publisher "$env:SIGNING_PUBLISHER"
+          }
+      - name: Sign MSIX when a certificate is configured
+        if: ${{ env.SIGNING_ENABLED == 'true' }}
+        shell: pwsh
+        env:
+          PFX_BASE64: ${{ secrets.WINDOWS_SIGNING_PFX_BASE64 }}
+          PFX_PASSWORD: ${{ secrets.WINDOWS_SIGNING_PFX_PASSWORD }}
+        run: |
+          $pfx = "$env:RUNNER_TEMP\signing.pfx"
+          [System.IO.File]::WriteAllBytes($pfx, [Convert]::FromBase64String($env:PFX_BASE64))
+          $msix = Get-ChildItem -Path build -Filter *.msix -Recurse | Select-Object -First 1
+          if ($null -eq $msix) { throw 'MSIX package was not created' }
+          signtool sign /fd SHA256 /f $pfx /p $env:PFX_PASSWORD $msix.FullName
+          Remove-Item -Force $pfx
+      - name: Verify and collect MSIX
+        shell: pwsh
+        run: |
+          $msix = Get-ChildItem -Path build -Filter *.msix -Recurse | Select-Object -First 1
+          if ($null -eq $msix) { throw 'MSIX package was not created' }
+          Copy-Item $msix.FullName "$env:RUNNER_TEMP\GulfCoastMesh-windows-x64.msix"
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v5
+        with:
+          name: gulfcoast-mesh-windows-x64-${{ github.sha }}
+          path: ${{ runner.temp }}/GulfCoastMesh-windows-x64.msix
+          retention-days: 14
+          if-no-files-found: error
+      - name: Remove Dart defines
+        if: always()
+        shell: pwsh
+        run: Remove-Item -Force "$env:RUNNER_TEMP\windows-defines.json" -ErrorAction SilentlyContinue
+
+  macos:
+    name: macOS arm64 installer
+    runs-on: macos-15
+    env:
+      SIGNING_ENABLED: ${{ secrets.MACOS_SIGNING_CERT_P12_BASE64 != '' && secrets.MACOS_SIGNING_IDENTITY != '' }}
+      NOTARIZATION_ENABLED: ${{ secrets.MACOS_NOTARY_PROFILE != '' }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: recursive
+      - uses: subosito/flutter-action@v2.22.0
+        with:
+          channel: stable
+          cache: false
+      - run: flutter pub get
+      - name: Create Dart defines
+        env:
+          API_KEY: ${{ secrets.MESHMAPPER_API_KEY }}
+        run: |
+          python3 -c 'import json, os; json.dump({"API_KEY": os.environ.get("API_KEY", "")}, open(os.path.join(os.environ["RUNNER_TEMP"], "macos-defines.json"), "w"))'
+      - name: Build macOS release app
+        run: flutter build macos --release --no-pub --dart-define-from-file="$RUNNER_TEMP/macos-defines.json"
+      - name: Import signing certificate
+        if: ${{ env.SIGNING_ENABLED == 'true' }}
+        env:
+          CERT_BASE64: ${{ secrets.MACOS_SIGNING_CERT_P12_BASE64 }}
+          CERT_PASSWORD: ${{ secrets.MACOS_SIGNING_CERT_PASSWORD }}
+        run: |
+          keychain="$RUNNER_TEMP/build.keychain-db"
+          cert="$RUNNER_TEMP/signing.p12"
+          echo "$CERT_BASE64" | base64 --decode > "$cert"
+          security create-keychain -p "$CERT_PASSWORD" "$keychain"
+          security set-keychain-settings -lut 21600 "$keychain"
+          security unlock-keychain -p "$CERT_PASSWORD" "$keychain"
+          security import "$cert" -k "$keychain" -P "$CERT_PASSWORD" -T /usr/bin/codesign
+          security list-keychain -d user -s "$keychain"
+          rm -f "$cert"
+      - name: Sign app when an identity is configured
+        if: ${{ env.SIGNING_ENABLED == 'true' }}
+        env:
+          SIGNING_IDENTITY: ${{ secrets.MACOS_SIGNING_IDENTITY }}
+        run: codesign --force --deep --options runtime --sign "$SIGNING_IDENTITY" build/macos/Build/Products/Release/gulf_coast_mesh_app.app
+      - name: Create DMG
+        run: |
+          version="$(awk '/^version:/{print $2; exit}' pubspec.yaml | cut -d+ -f1)"
+          stage="$RUNNER_TEMP/dmg"
+          mkdir -p "$stage"
+          cp -R build/macos/Build/Products/Release/gulf_coast_mesh_app.app "$stage/Gulf Coast Mesh.app"
+          ln -s /Applications "$stage/Applications"
+          hdiutil create -volname "Gulf Coast Mesh" -srcfolder "$stage" -ov -format UDZO "$RUNNER_TEMP/GulfCoastMesh-${version}-arm64.dmg"
+      - name: Notarize DMG when a profile is configured
+        if: ${{ env.SIGNING_ENABLED == 'true' && env.NOTARIZATION_ENABLED == 'true' }}
+        env:
+          NOTARY_PROFILE: ${{ secrets.MACOS_NOTARY_PROFILE }}
+        run: |
+          dmg="$(printf '%s\n' "$RUNNER_TEMP"/GulfCoastMesh-*-arm64.dmg)"
+          xcrun notarytool submit "$dmg" --keychain-profile "$NOTARY_PROFILE" --wait
+          xcrun stapler staple "$dmg"
+      - name: Upload macOS installer
+        uses: actions/upload-artifact@v5
+        with:
+          name: gulfcoast-mesh-macos-arm64-${{ github.sha }}
+          path: ${{ runner.temp }}/GulfCoastMesh-*-arm64.dmg
+          retention-days: 14
+          if-no-files-found: error
+      - name: Remove signing keychain
+        if: always()
+        run: security delete-keychain "$RUNNER_TEMP/build.keychain-db" || true
+      - name: Remove Dart defines
+        if: always()
+        run: rm -f "$RUNNER_TEMP/macos-defines.json"
+
+  desktop-artifact:
+    name: Combined desktop installers
+    needs: [linux, windows, macos]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download platform installers
+        uses: actions/download-artifact@v5
+        with:
+          pattern: gulfcoast-mesh-*
+          path: desktop-installers
+          merge-multiple: true
+      - name: Upload combined desktop installers
+        uses: actions/upload-artifact@v5
+        with:
+          name: gulfcoast-mesh-desktop-installers-${{ github.sha }}
+          path: desktop-installers
+          retention-days: 14
+          if-no-files-found: error

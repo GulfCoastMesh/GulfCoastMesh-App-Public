@@ -1,0 +1,6 @@
+#include "../../Flutter/Flutter-Release.xcconfig"
+#include "Warnings.xcconfig"
+
+// Applies to Release and Profile, including Flutter's AOT build.
+ARCHS = arm64
+EXCLUDED_ARCHS = x86_64

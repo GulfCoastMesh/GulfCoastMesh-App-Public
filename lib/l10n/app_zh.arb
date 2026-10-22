@@ -1,0 +1,1775 @@
+{
+  "@@locale": "zh",
+  "appTitle": "Gulf Coast Mesh App",
+  "nav_contacts": "联系方式",
+  "nav_channels": "频道",
+  "nav_map": "地图",
+  "nav_chats": "聊天",
+  "nav_nodes": "节点",
+  "nav_settings": "设置",
+  "common_cancel": "取消",
+  "common_ok": "好的",
+  "common_connect": "连接",
+  "common_unknownDevice": "未知设备",
+  "common_save": "保存",
+  "common_delete": "删除",
+  "common_close": "关闭",
+  "common_edit": "编辑",
+  "common_add": "添加",
+  "common_settings": "设置",
+  "common_disconnect": "断开",
+  "common_connected": "连接",
+  "common_disconnected": "断开",
+  "common_create": "创造",
+  "common_continue": "继续",
+  "common_share": "分享",
+  "common_copy": "复制",
+  "common_retry": "重试",
+  "common_hide": "隐藏",
+  "common_remove": "移除",
+  "common_enable": "启用",
+  "common_disable": "禁用",
+  "common_reboot": "重新启动",
+  "common_loading": "正在加载...",
+  "common_notAvailable": "—",
+  "common_voltageValue": "{volts} V",
+  "@common_voltageValue": {
+    "placeholders": {
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "common_percentValue": "{percent}%",
+  "@common_percentValue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "scanner_title": "Gulf Coast Mesh App",
+  "scanner_scanning": "正在搜索设备...",
+  "scanner_connecting": "正在连接...",
+  "scanner_disconnecting": "断开连接...",
+  "scanner_notConnected": "未连接",
+  "scanner_connectedTo": "已连接到 {deviceName}",
+  "@scanner_connectedTo": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_searchingDevices": "正在搜索 MeshCore 设备...",
+  "scanner_tapToScan": "点击“扫描”功能，以查找 MeshCore 设备。",
+  "scanner_connectionFailed": "Connection failed: {error}",
+  "@scanner_connectionFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_stop": "停止",
+  "scanner_scan": "扫描",
+  "device_quickSwitch": "快速切换",
+  "device_meshcore": "网格核心",
+  "settings_title": "设置",
+  "settings_deviceInfo": "设备信息",
+  "settings_appSettings": "应用设置",
+  "settings_appSettingsSubtitle": "通知、消息和地图偏好",
+  "settings_nodeSettings": "节点设置",
+  "settings_nodeName": "节点名称",
+  "settings_nodeNameNotSet": "未设置",
+  "settings_nodeNameHint": "请输入节点名称",
+  "settings_nodeNameUpdated": "姓名已更新",
+  "settings_radioSettings": "收音机设置",
+  "settings_radioSettingsSubtitle": "频率、功率、扩频因子",
+  "settings_radioSettingsUpdated": "收音机设置已更新",
+  "settings_location": "地点",
+  "settings_locationSubtitle": "GPS 坐标",
+  "settings_locationUpdated": "位置和 GPS 设置已更新",
+  "settings_locationBothRequired": "请输入经度和纬度。",
+  "settings_locationInvalid": "无效的经度和纬度。",
+  "settings_locationGPSEnable": "开启 GPS 功能",
+  "settings_locationGPSEnableSubtitle": "使 GPS 能够自动更新位置。",
+  "settings_locationIntervalSec": "GPS 间隔时间（秒）",
+  "settings_locationIntervalInvalid": "间隔时间必须至少为 60 秒，但不超过 86400 秒。",
+  "settings_latitude": "纬度",
+  "settings_longitude": "经度",
+  "settings_privacyMode": "隐私模式",
+  "settings_privacyModeSubtitle": "在广告中隐藏姓名/位置",
+  "settings_privacyModeToggle": "切换隐私模式，以隐藏您的姓名和位置，从而在广告中保护您的个人信息。",
+  "settings_privacyModeEnabled": "隐私模式已启用",
+  "settings_privacyModeDisabled": "隐私模式已关闭",
+  "settings_actions": "行动",
+  "settings_sendAdvertisement": "发布广告",
+  "settings_sendAdvertisementSubtitle": "现已开始进行广播节目",
+  "settings_advertisementSent": "已发送广告",
+  "settings_syncTime": "同步时间",
+  "settings_syncTimeSubtitle": "将设备时钟设置为与手机时间一致",
+  "settings_timeSynchronized": "时间同步",
+  "settings_refreshContacts": "刷新联系人",
+  "settings_refreshContactsSubtitle": "从设备中重新加载联系人列表",
+  "settings_rebootDevice": "重启设备",
+  "settings_rebootDeviceSubtitle": "重新启动 MeshCore 设备",
+  "settings_rebootDeviceConfirm": "您确定要重启设备吗？这将导致您与设备断开连接。",
+  "settings_debug": "调试",
+  "settings_bleDebugLog": "BLE 调试日志",
+  "settings_bleDebugLogSubtitle": "BLE 命令、响应和原始数据",
+  "settings_appDebugLog": "应用程序调试日志",
+  "settings_appDebugLogSubtitle": "应用程序调试消息",
+  "settings_about": "关于",
+  "settings_aboutVersion": "Gulf Coast Mesh App v{version}",
+  "@settings_aboutVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settings_aboutLegalese": "2026 Gulf Coast Mesh App",
+  "settings_aboutDescription": "一个开源的 Flutter 客户端，用于 MeshCore LoRa 无线网络设备。",
+  "settings_infoName": "姓名",
+  "settings_infoId": "ID",
+  "settings_infoStatus": "状态",
+  "settings_infoBattery": "电池",
+  "settings_infoPublicKey": "公钥",
+  "settings_infoContactsCount": "联系人数量",
+  "settings_infoChannelCount": "通道数量",
+  "settings_presets": "预设",
+  "settings_frequency": "频率 (MHz)",
+  "settings_frequencyHelper": "300.0 - 2500.0",
+  "settings_frequencyInvalid": "无效频率（300-2500 MHz）",
+  "settings_bandwidth": "带宽",
+  "settings_spreadingFactor": "传播系数",
+  "settings_codingRate": "编码速率",
+  "settings_txPower": "TX 功率（dBm）",
+  "settings_txPowerHelper": "0 - 22",
+  "settings_txPowerInvalid": "无效的发射功率（0-22 dBm）",
+  "settings_error": "[保存：{message}]\n错误：{message}",
+  "@settings_error": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "appSettings_title": "应用设置",
+  "appSettings_appearance": "外观",
+  "appSettings_theme": "主题",
+  "appSettings_themeSystem": "系统默认设置",
+  "appSettings_themeLight": "光",
+  "appSettings_themeDark": "黑暗",
+  "appSettings_language": "语言",
+  "appSettings_languageSystem": "系统默认设置",
+  "appSettings_languageEn": "英语",
+  "appSettings_languageFr": "法语",
+  "appSettings_languageEs": "西班牙语",
+  "appSettings_languageDe": "德语",
+  "appSettings_languagePl": "波兰语",
+  "appSettings_languageSl": "斯洛文语",
+  "appSettings_languagePt": "葡萄牙语",
+  "appSettings_languageIt": "意大利语",
+  "appSettings_languageZh": "中文",
+  "appSettings_languageSv": "瑞典语",
+  "appSettings_languageNl": "荷兰语",
+  "appSettings_languageSk": "斯洛伐克语",
+  "appSettings_languageBg": "保加利亚",
+  "appSettings_languageRu": "俄语",
+  "appSettings_languageUk": "乌克兰",
+  "appSettings_enableMessageTracing": "启用消息追踪",
+  "appSettings_enableMessageTracingSubtitle": "显示消息的详细路由和时间元数据",
+  "appSettings_notifications": "通知",
+  "appSettings_enableNotifications": "启用通知",
+  "appSettings_enableNotificationsSubtitle": "接收消息和广告的通知",
+  "appSettings_notificationPermissionDenied": "权限被拒绝",
+  "appSettings_notificationsEnabled": "通知已启用",
+  "appSettings_notificationsDisabled": "通知已关闭",
+  "appSettings_messageNotifications": "消息通知",
+  "appSettings_messageNotificationsSubtitle": "在收到新消息时显示通知",
+  "appSettings_channelMessageNotifications": "频道消息通知",
+  "appSettings_channelMessageNotificationsSubtitle": "在收到频道消息时，显示通知。",
+  "appSettings_advertisementNotifications": "广告通知",
+  "appSettings_advertisementNotificationsSubtitle": "在发现新的节点时，显示通知。",
+  "appSettings_messaging": "信息传递",
+  "appSettings_clearPathOnMaxRetry": "关于“最大重试”的清晰说明",
+  "appSettings_clearPathOnMaxRetrySubtitle": "在尝试发送失败后 5 次，重置联系路径。",
+  "appSettings_pathsWillBeCleared": "如果尝试 5 次后仍然失败，则将重新规划路径。",
+  "appSettings_pathsWillNotBeCleared": "路径不会自动清除。",
+  "appSettings_autoRouteRotation": "自动路径轮换",
+  "appSettings_autoRouteRotationSubtitle": "在最佳路径和防洪模式之间切换",
+  "appSettings_autoRouteRotationEnabled": "自动路径轮换已启用",
+  "appSettings_autoRouteRotationDisabled": "自动路径轮换已禁用",
+  "appSettings_battery": "电池",
+  "appSettings_batteryChemistry": "电池化学",
+  "appSettings_batteryChemistryPerDevice": "为每个设备设置 ({deviceName})",
+  "@appSettings_batteryChemistryPerDevice": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "appSettings_batteryChemistryConnectFirst": "连接到设备以进行选择",
+  "appSettings_batteryNmc": "18650 型号，NMC 电池（3.0-4.2V）",
+  "appSettings_batteryLifepo4": "磷酸铁锂 (2.6-3.65V)",
+  "appSettings_batteryLipo": "锂离子电池 (3.0-4.2V)",
+  "appSettings_mapDisplay": "地图展示",
+  "appSettings_showRepeaters": "显示重复",
+  "appSettings_showRepeatersSubtitle": "在地图上显示重复节点",
+  "appSettings_showChatNodes": "显示聊天节点",
+  "appSettings_showChatNodesSubtitle": "在地图上显示聊天节点",
+  "appSettings_showOtherNodes": "显示其他节点",
+  "appSettings_showOtherNodesSubtitle": "在地图上显示其他节点类型",
+  "appSettings_timeFilter": "时间过滤器",
+  "appSettings_timeFilterShowAll": "显示所有节点",
+  "appSettings_timeFilterShowLast": "Show nodes from last {hours} hours",
+  "@appSettings_timeFilterShowLast": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "appSettings_mapTimeFilter": "地图时间筛选",
+  "appSettings_showNodesDiscoveredWithin": "显示在以下范围内发现的节点：",
+  "appSettings_allTime": "所有时间",
+  "appSettings_lastHour": "过去一小时",
+  "appSettings_last6Hours": "过去6小时",
+  "appSettings_last24Hours": "过去24小时",
+  "appSettings_lastWeek": "上周",
+  "appSettings_offlineMapCache": "离线地图缓存",
+  "appSettings_noAreaSelected": "未选择任何区域",
+  "appSettings_areaSelectedZoom": "已选择区域（缩放至 {minZoom} - {maxZoom}）",
+  "@appSettings_areaSelectedZoom": {
+    "placeholders": {
+      "minZoom": {
+        "type": "int"
+      },
+      "maxZoom": {
+        "type": "int"
+      }
+    }
+  },
+  "appSettings_debugCard": "调试",
+  "appSettings_appDebugLogging": "应用程序调试日志",
+  "appSettings_appDebugLoggingSubtitle": "用于故障排除的日志应用程序调试消息",
+  "appSettings_appDebugLoggingEnabled": "调试日志已启用",
+  "appSettings_appDebugLoggingDisabled": "应用程序调试日志已禁用",
+  "contacts_title": "联系方式",
+  "contacts_noContacts": "目前还没有联系人",
+  "contacts_contactsWillAppear": "当设备发布广告时，联系方式会显示。",
+  "contacts_searchContacts": "搜索联系人...",
+  "contacts_noUnreadContacts": "没有未读通讯",
+  "contacts_noContactsFound": "未找到任何联系人或群组",
+  "contacts_deleteContact": "删除联系人",
+  "contacts_removeConfirm": "Remove {contactName} from contacts?",
+  "@contacts_removeConfirm": {
+    "placeholders": {
+      "contactName": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_manageRepeater": "管理重复器",
+  "contacts_manageRoom": "管理房间服务器",
+  "contacts_roomLogin": "服务器登录",
+  "contacts_openChat": "开放聊天",
+  "contacts_editGroup": "编辑小组",
+  "contacts_deleteGroup": "删除群组",
+  "contacts_deleteGroupConfirm": "删除\"{groupName}\"？",
+  "@contacts_deleteGroupConfirm": {
+    "placeholders": {
+      "groupName": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_newGroup": "新的团体",
+  "contacts_groupName": "团体名称",
+  "contacts_groupNameRequired": "需要提供组名称",
+  "contacts_groupAlreadyExists": "名为\"{name}\"的组已经存在",
+  "@contacts_groupAlreadyExists": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_filterContacts": "筛选联系人...",
+  "contacts_noContactsMatchFilter": "未找到符合您筛选条件的联系人",
+  "contacts_noMembers": "没有会员",
+  "contacts_lastSeenNow": "最后一次被看到的时间",
+  "contacts_lastSeenMinsAgo": "Last seen {minutes} mins ago",
+  "@contacts_lastSeenMinsAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "contacts_lastSeenHourAgo": "最后一次被看到的时间：1小时前",
+  "contacts_lastSeenHoursAgo": "Last seen {hours} hours ago",
+  "@contacts_lastSeenHoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "contacts_lastSeenDayAgo": "最后一次被看到的时间是1天前",
+  "contacts_lastSeenDaysAgo": "Last seen {days} days ago",
+  "@contacts_lastSeenDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_title": "频道",
+  "channels_noChannelsConfigured": "未配置任何频道",
+  "channels_addPublicChannel": "添加公共频道",
+  "channels_searchChannels": "搜索频道...",
+  "channels_noChannelsFound": "未找到任何频道",
+  "channels_channelIndex": "频道 {index}",
+  "@channels_channelIndex": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_hashtagChannel": "话题标签频道",
+  "channels_public": "公众",
+  "channels_private": "私人",
+  "channels_publicChannel": "公共频道",
+  "channels_privateChannel": "私密频道",
+  "channels_editChannel": "编辑频道",
+  "channels_muteChannel": "静音频道",
+  "channels_unmuteChannel": "取消静音频道",
+  "channels_deleteChannel": "删除频道",
+  "channels_deleteChannelConfirm": "Delete \"{name}\"? This cannot be undone.",
+  "@channels_deleteChannelConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_channelDeleted": "删除频道 \"{name}\"",
+  "@channels_channelDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_addChannel": "添加频道",
+  "channels_channelIndexLabel": "频道索引",
+  "channels_channelName": "频道名称",
+  "channels_usePublicChannel": "使用公共频道",
+  "channels_standardPublicPsk": "标准公共PSK",
+  "channels_pskHex": "PSK (十六进制)",
+  "channels_generateRandomPsk": "生成随机的PSK（正交相移键控）",
+  "channels_enterChannelName": "请在此处输入频道名称",
+  "channels_pskMustBe32Hex": "PSK 必须包含 32 个十六进制字符。",
+  "channels_channelAdded": "添加频道 \"{name}\"",
+  "@channels_channelAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_editChannelTitle": "编辑频道 {index}",
+  "@channels_editChannelTitle": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_smazCompression": "SMAZ 压缩",
+  "channels_channelUpdated": "频道 \"{name}\" 已更新",
+  "@channels_channelUpdated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_publicChannelAdded": "已添加公共频道",
+  "channels_sortBy": "按排序",
+  "channels_sortManual": "手册",
+  "channels_sortAZ": "A 到 Z",
+  "channels_sortLatestMessages": "最新消息",
+  "channels_sortUnread": "未读",
+  "channels_createPrivateChannel": "创建私密频道",
+  "channels_createPrivateChannelDesc": "使用秘密密钥进行保护。",
+  "channels_joinPrivateChannel": "加入私密频道",
+  "channels_joinPrivateChannelDesc": "手动输入密钥。",
+  "channels_joinPublicChannel": "加入公共频道",
+  "channels_joinPublicChannelDesc": "任何人都可以加入这个频道。",
+  "channels_joinHashtagChannel": "加入一个带有特定标签的频道",
+  "channels_joinHashtagChannelDesc": "任何人都可以加入带有特定标签的频道。",
+  "channels_scanQrCode": "扫描二维码",
+  "channels_scanQrCodeComingSoon": "即将发布",
+  "channels_enterHashtag": "输入标签",
+  "channels_hashtagHint": "例如：#团队",
+  "chat_noMessages": "目前还没有收到任何消息。",
+  "chat_sendMessageToStart": "发送消息以开始",
+  "chat_originalMessageNotFound": "无法找到原始消息",
+  "chat_replyingTo": "Replying to {name}",
+  "@chat_replyingTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_replyTo": "Reply to {name}",
+  "@chat_replyTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_location": "地点",
+  "chat_sendMessageTo": "Send a message to {contactName}",
+  "@chat_sendMessageTo": {
+    "placeholders": {
+      "contactName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_typeMessage": "输入消息...",
+  "chat_messageTooLong": "消息内容过长（最大 {maxBytes} 字节）。",
+  "@chat_messageTooLong": {
+    "placeholders": {
+      "maxBytes": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_messageCopied": "消息已复制",
+  "chat_messageDeleted": "消息已删除",
+  "chat_retryingMessage": "重试消息",
+  "chat_retryCount": "Retry {current}/{max}",
+  "@chat_retryCount": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_sendGif": "发送 GIF 动画",
+  "chat_reply": "回复",
+  "chat_addReaction": "添加评论",
+  "chat_me": "我",
+  "emojiCategorySmileys": "表情符号",
+  "emojiCategoryGestures": "手势",
+  "emojiCategoryHearts": "心脏",
+  "emojiCategoryObjects": "物体",
+  "gifPicker_title": "选择一个 GIF 动画",
+  "gifPicker_searchHint": "搜索 GIF 动画...",
+  "gifPicker_poweredBy": "由 GIPHY 提供支持",
+  "gifPicker_noGifsFound": "未找到 GIF 动画",
+  "gifPicker_failedLoad": "无法加载 GIF 动画",
+  "gifPicker_failedSearch": "未能搜索 GIF 动画",
+  "gifPicker_noInternet": "没有互联网连接",
+  "debugLog_appTitle": "应用程序调试日志",
+  "debugLog_bleTitle": "BLE 调试日志",
+  "debugLog_copyLog": "复制日志",
+  "debugLog_clearLog": "清晰的日志",
+  "debugLog_copied": "调试日志已复制",
+  "debugLog_bleCopied": "BLE 日志已复制",
+  "debugLog_noEntries": "目前还没有调试日志",
+  "debugLog_enableInSettings": "在设置中启用应用程序调试日志功能。",
+  "debugLog_frames": "框架",
+  "debugLog_rawLogRx": "原始日志-RX",
+  "debugLog_noBleActivity": "目前尚未有蓝牙低功耗（BLE）活动。",
+  "debugFrame_length": "帧长度：{count} 字节",
+  "@debugFrame_length": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "debugFrame_command": "命令：0x{value}",
+  "@debugFrame_command": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textMessageHeader": "短信模板：",
+  "debugFrame_destinationPubKey": "- 目标公钥：{pubKey}",
+  "@debugFrame_destinationPubKey": {
+    "placeholders": {
+      "pubKey": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_timestamp": "- Timestamp: {timestamp}",
+  "@debugFrame_timestamp": {
+    "placeholders": {
+      "timestamp": {
+        "type": "int"
+      }
+    }
+  },
+  "debugFrame_flags": "- 标志：0x{value}",
+  "@debugFrame_flags": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textType": "- Text Type: {type} ({label})",
+  "@debugFrame_textType": {
+    "placeholders": {
+      "type": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textTypeCli": "命令行界面",
+  "debugFrame_textTypePlain": "简单",
+  "debugFrame_text": "- 文本：“{text}”",
+  "@debugFrame_text": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_hexDump": "十六进制数据：",
+  "chat_pathManagement": "路径管理",
+  "chat_routingMode": "路由模式",
+  "chat_autoUseSavedPath": "自动（使用已保存的路径）",
+  "chat_forceFloodMode": "强制洪水模式",
+  "chat_recentAckPaths": "最近使用的 ACK 路径（点击使用）：",
+  "chat_pathHistoryFull": "路径历史已满。删除条目以添加新的条目。",
+  "chat_hopSingular": "跳跃",
+  "chat_hopPlural": "啤酒花",
+  "chat_hopsCount": "{count} {count, plural, =1{hop} other{hops}}",
+  "@chat_hopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_successes": "成功",
+  "chat_removePath": "删除路径",
+  "chat_noPathHistoryYet": "目前还没有历史记录。\n发送消息以查找路径。",
+  "chat_pathActions": "路径操作：",
+  "chat_setCustomPath": "设置自定义路径",
+  "chat_setCustomPathSubtitle": "手动指定路由路径",
+  "chat_clearPath": "明确的道路",
+  "chat_clearPathSubtitle": "在下一次发送时，重新尝试。",
+  "chat_pathCleared": "路径已清理。下一条消息将重新确定路线。",
+  "chat_floodModeSubtitle": "使用应用程序栏中的路由切换功能",
+  "chat_floodModeEnabled": "防洪模式已启用。通过应用程序栏中的路由图标进行切换。",
+  "chat_fullPath": "完整路径",
+  "chat_pathDetailsNotAvailable": "路径信息尚未提供。请尝试发送消息以刷新。",
+  "chat_pathSetHops": "Path set: {hopCount} {hopCount, plural, =1{hop} other{hops}} - {status}",
+  "@chat_pathSetHops": {
+    "placeholders": {
+      "hopCount": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_pathSavedLocally": "已本地保存。连接以进行同步。",
+  "chat_pathDeviceConfirmed": "设备已确认。",
+  "chat_pathDeviceNotConfirmed": "该设备尚未得到确认。",
+  "chat_type": "类型",
+  "chat_path": "路径",
+  "chat_publicKey": "公钥",
+  "chat_compressOutgoingMessages": "压缩发送的消息",
+  "chat_floodForced": "洪水（被迫）",
+  "chat_directForced": "直接（强制性的）",
+  "chat_hopsForced": "{count} 根啤酒花（人工种植）",
+  "@chat_hopsForced": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_floodAuto": "自动洪水",
+  "chat_direct": "直接",
+  "chat_poiShared": "共享位置",
+  "chat_unread": "Unread: {count}",
+  "@chat_unread": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_openLink": "打开链接？",
+  "chat_openLinkConfirmation": "您想用浏览器打开这个链接吗？",
+  "chat_open": "开放",
+  "chat_couldNotOpenLink": "[保存：{url}]\n无法打开链接：{url}",
+  "@chat_couldNotOpenLink": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_invalidLink": "无效的链接格式",
+  "map_title": "节点图",
+  "map_noNodesWithLocation": "没有包含位置信息的节点",
+  "map_nodesNeedGps": "节点需要共享其 GPS 坐标，以便在地图上显示",
+  "map_nodesCount": "Nodes: {count}",
+  "@map_nodesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "map_pinsCount": "Pins: {count}",
+  "@map_pinsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "map_chat": "聊天",
+  "map_repeater": "重复器",
+  "map_room": "房间",
+  "map_sensor": "传感器",
+  "map_pinDm": "PIN (直接消息)",
+  "map_pinPrivate": "私密",
+  "map_pinPublic": "公开",
+  "map_lastSeen": "最后一次被看到",
+  "map_disconnectConfirm": "您确定要断开与此设备的连接吗？",
+  "map_from": "从",
+  "map_source": "来源",
+  "map_flags": "旗帜",
+  "map_pinLabel": "标签",
+  "map_label": "标签",
+  "map_publicLocationShare": "公共场所共享",
+  "map_publicLocationShareConfirm": "[保存：{channelLabel}]\n您即将分享一个位置，该位置位于 {channelLabel}。 此频道是公开的，任何拥有 PSK 的人都可以看到它。",
+  "@map_publicLocationShareConfirm": {
+    "placeholders": {
+      "channelLabel": {
+        "type": "String"
+      }
+    }
+  },
+  "map_connectToShareMarkers": "连接设备以共享标记",
+  "map_filterNodes": "过滤节点",
+  "map_nodeTypes": "节点类型",
+  "map_chatNodes": "聊天节点",
+  "map_repeaters": "重复器",
+  "map_otherNodes": "其他节点",
+  "map_keyPrefix": "关键前缀",
+  "map_filterByKeyPrefix": "按关键前缀筛选",
+  "map_publicKeyPrefix": "公钥前缀",
+  "map_markers": "标记",
+  "map_showSharedMarkers": "显示共享标记",
+  "map_lastSeenTime": "最后一次被看到的时间",
+  "map_joinRoom": "加入房间",
+  "map_manageRepeater": "管理重复器",
+  "mapCache_title": "离线地图缓存",
+  "mapCache_selectAreaFirst": "选择一个用于缓存的区域",
+  "mapCache_noTilesToDownload": "此区域没有可下载的瓦片。",
+  "mapCache_downloadTilesTitle": "下载瓷砖",
+  "mapCache_downloadTilesPrompt": "[保存：{count}]\n下载 {count} 个图片用于离线使用？",
+  "@mapCache_downloadTilesPrompt": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadAction": "下载",
+  "mapCache_cachedTiles": "缓存 {count} 个瓦片",
+  "@mapCache_cachedTiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_cachedTilesWithFailed": "Cached {downloaded} tiles ({failed} failed)",
+  "@mapCache_cachedTilesWithFailed": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_clearOfflineCacheTitle": "清除离线缓存",
+  "mapCache_clearOfflineCachePrompt": "清除所有缓存的地图瓦片",
+  "mapCache_offlineCacheCleared": "离线缓存已清除",
+  "mapCache_noAreaSelected": "未选择任何区域",
+  "mapCache_cacheArea": "缓存区域",
+  "mapCache_useCurrentView": "使用当前视图",
+  "mapCache_zoomRange": "变焦范围",
+  "mapCache_estimatedTiles": "Estimated tiles: {count}",
+  "@mapCache_estimatedTiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadedTiles": "Downloaded {completed} / {total}",
+  "@mapCache_downloadedTiles": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadTilesButton": "下载瓷砖",
+  "mapCache_clearCacheButton": "清除缓存",
+  "mapCache_failedDownloads": "Failed downloads: {count}",
+  "@mapCache_failedDownloads": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_boundsLabel": "N {north}, S {south}, E {east}, W {west}",
+  "@mapCache_boundsLabel": {
+    "placeholders": {
+      "north": {
+        "type": "String"
+      },
+      "south": {
+        "type": "String"
+      },
+      "east": {
+        "type": "String"
+      },
+      "west": {
+        "type": "String"
+      }
+    }
+  },
+  "time_justNow": "刚才",
+  "time_minutesAgo": "{minutes}m ago",
+  "@time_minutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "time_hoursAgo": "{hours}h ago",
+  "@time_hoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "time_daysAgo": "{days}天前",
+  "@time_daysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "time_hour": "小时",
+  "time_hours": "小时",
+  "time_day": "一天",
+  "time_days": "天",
+  "time_week": "一周",
+  "time_weeks": "周",
+  "time_month": "月份",
+  "time_months": "月份",
+  "time_minutes": "分钟",
+  "time_allTime": "所有时间",
+  "dialog_disconnect": "断开",
+  "dialog_disconnectConfirm": "您确定要断开与此设备的连接吗？",
+  "login_repeaterLogin": "重复登录",
+  "login_roomLogin": "服务器登录",
+  "login_password": "密码",
+  "login_enterPassword": "请输入密码",
+  "login_savePassword": "保存密码",
+  "login_savePasswordSubtitle": "密码将安全地存储在此设备上",
+  "login_repeaterDescription": "输入重复器密码，即可访问设置和状态。",
+  "login_roomDescription": "输入密码进入房间，即可访问设置和状态。",
+  "login_routing": "路由",
+  "login_routingMode": "路由模式",
+  "login_autoUseSavedPath": "自动（使用已保存的路径）",
+  "login_forceFloodMode": "强制洪水模式",
+  "login_managePaths": "管理路径",
+  "login_login": "登录",
+  "login_attempt": "Attempt {current}/{max}",
+  "@login_attempt": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "login_failed": "Login failed: {error}",
+  "@login_failed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "login_failedMessage": "登录失败。可能是密码错误，也可能是无法连接到服务器。",
+  "common_reload": "重新加载",
+  "common_clear": "清晰",
+  "path_currentPath": "Current path: {path}",
+  "@path_currentPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "path_usingHopsPath": "使用 {count} {count, plural, =1{hop} other{hops}} 条路径",
+  "@path_usingHopsPath": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "path_enterCustomPath": "输入自定义路径",
+  "path_currentPathLabel": "当前路径",
+  "path_hexPrefixInstructions": "请输入每个跳跃步骤的 2 个字符的十六进制前缀，用逗号分隔。",
+  "path_hexPrefixExample": "例如：A1, F2, 3C (每个节点使用其公钥的第一字节)",
+  "path_labelHexPrefixes": "路径（十六进制前缀）",
+  "path_helperMaxHops": "最大 64 个“hop”（跳跃）。每个前缀由 2 个十六进制字符（1 字节）组成。",
+  "path_selectFromContacts": "或者从联系人列表中选择：",
+  "path_noRepeatersFound": "未找到任何重复设备或房间服务器。",
+  "path_customPathsRequire": "自定义路径需要中间节点，这些节点可以转发消息。",
+  "path_invalidHexPrefixes": "Invalid hex prefixes: {prefixes}",
+  "@path_invalidHexPrefixes": {
+    "placeholders": {
+      "prefixes": {
+        "type": "String"
+      }
+    }
+  },
+  "path_tooLong": "路径太长。允许的最大跳跃次数为 64 次。",
+  "path_setPath": "设置路径",
+  "repeater_management": "重复器管理",
+  "room_management": "服务器管理",
+  "repeater_managementTools": "管理工具",
+  "repeater_status": "状态",
+  "repeater_statusSubtitle": "查看重复器状态、统计信息和邻居",
+  "repeater_telemetry": "远程监控",
+  "repeater_telemetrySubtitle": "查看传感器和系统状态的数据。",
+  "repeater_cli": "命令行界面",
+  "repeater_cliSubtitle": "向复用器发送指令",
+  "repeater_neighbors": "邻居",
+  "repeater_neighborsSubtitle": "查看邻居节点（无需中间节点）。",
+  "repeater_settings": "设置",
+  "repeater_settingsSubtitle": "配置重复器参数",
+  "repeater_statusTitle": "重复器状态",
+  "repeater_routingMode": "路由模式",
+  "repeater_autoUseSavedPath": "自动（使用已保存的路径）",
+  "repeater_forceFloodMode": "强制洪水模式",
+  "repeater_pathManagement": "路径管理",
+  "repeater_refresh": "更新",
+  "repeater_statusRequestTimeout": "状态请求超时。",
+  "repeater_errorLoadingStatus": "Error loading status: {error}",
+  "@repeater_errorLoadingStatus": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_systemInformation": "系统信息",
+  "repeater_battery": "电池",
+  "repeater_clockAtLogin": "登录时的时间",
+  "repeater_uptime": "正常运行时间",
+  "repeater_queueLength": "排队长度",
+  "repeater_debugFlags": "调试标志",
+  "repeater_radioStatistics": "广播统计",
+  "repeater_lastRssi": "上次的 RSSI 值",
+  "repeater_lastSnr": "最后一次信噪比",
+  "repeater_noiseFloor": "噪声水平",
+  "repeater_txAirtime": "TX 频道预留时间",
+  "repeater_rxAirtime": "RX 空时",
+  "repeater_packetStatistics": "数据包统计",
+  "repeater_sent": "发送",
+  "repeater_received": "已收到",
+  "repeater_duplicates": "重复",
+  "repeater_daysHoursMinsSecs": "{days}天 {hours}小时 {minutes}分 {seconds}秒",
+  "@repeater_daysHoursMinsSecs": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_packetTxTotal": "Total: {total}, Flood: {flood}, Direct: {direct}",
+  "@repeater_packetTxTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_packetRxTotal": "Total: {total}, Flood: {flood}, Direct: {direct}",
+  "@repeater_packetRxTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_duplicatesFloodDirect": "Flood: {flood}, Direct: {direct}",
+  "@repeater_duplicatesFloodDirect": {
+    "placeholders": {
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_duplicatesTotal": "Total: {total}",
+  "@repeater_duplicatesTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_settingsTitle": "重复器设置",
+  "repeater_basicSettings": "基本设置",
+  "repeater_repeaterName": "重复器名称",
+  "repeater_repeaterNameHelper": "此复播器的显示名称",
+  "repeater_adminPassword": "管理员密码",
+  "repeater_adminPasswordHelper": "完整访问密码",
+  "repeater_guestPassword": "访客密码",
+  "repeater_guestPasswordHelper": "只读访问密码",
+  "repeater_radioSettings": "收音机设置",
+  "repeater_frequencyMhz": "频率 (MHz)",
+  "repeater_frequencyHelper": "300-2500 兆赫",
+  "repeater_txPower": "TX 功率",
+  "repeater_txPowerHelper": "1-30 dBm",
+  "repeater_bandwidth": "带宽",
+  "repeater_spreadingFactor": "传播系数",
+  "repeater_codingRate": "编码速率",
+  "repeater_locationSettings": "位置设置",
+  "repeater_latitude": "纬度",
+  "repeater_latitudeHelper": "十进制度（例如：37.7749）",
+  "repeater_longitude": "经度",
+  "repeater_longitudeHelper": "十进制度（例如：-122.4194）",
+  "repeater_features": "特点",
+  "repeater_packetForwarding": "数据包转发",
+  "repeater_packetForwardingSubtitle": "启用重复器，使其能够转发数据包",
+  "repeater_guestAccess": "访客访问",
+  "repeater_guestAccessSubtitle": "允许访客仅限读取权限",
+  "repeater_privacyMode": "隐私模式",
+  "repeater_privacyModeSubtitle": "在广告中隐藏姓名/位置",
+  "repeater_advertisementSettings": "广告设置",
+  "repeater_localAdvertInterval": "本地广告投放时间段",
+  "repeater_localAdvertIntervalMinutes": "{minutes} minutes",
+  "@repeater_localAdvertIntervalMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_floodAdvertInterval": "洪水广告播放间隔",
+  "repeater_floodAdvertIntervalHours": "{hours} hours",
+  "@repeater_floodAdvertIntervalHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_encryptedAdvertInterval": "加密的广告投放时间段",
+  "repeater_dangerZone": "危险区域",
+  "repeater_rebootRepeater": "重启重复器",
+  "repeater_rebootRepeaterSubtitle": "重新启动重复器设备",
+  "repeater_rebootRepeaterConfirm": "您确定要重新启动这个中继器吗？",
+  "repeater_regenerateIdentityKey": "重新生成身份密钥",
+  "repeater_regenerateIdentityKeySubtitle": "生成新的公钥/私钥对",
+  "repeater_regenerateIdentityKeyConfirm": "这将为复用器生成一个新的身份。继续吗？",
+  "repeater_eraseFileSystem": "删除文件系统",
+  "repeater_eraseFileSystemSubtitle": "格式化重复文件系统",
+  "repeater_eraseFileSystemConfirm": "警告：此操作将清除复用器上的所有数据。 无法恢复！",
+  "repeater_eraseSerialOnly": "“Erase”功能仅可通过串行控制台使用。",
+  "repeater_commandSent": "Command sent: {command}",
+  "@repeater_commandSent": {
+    "placeholders": {
+      "command": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_errorSendingCommand": "Error sending command: {error}",
+  "@repeater_errorSendingCommand": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_confirm": "确认",
+  "repeater_settingsSaved": "设置已成功保存",
+  "repeater_errorSavingSettings": "Error saving settings: {error}",
+  "@repeater_errorSavingSettings": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_refreshBasicSettings": "重置基本设置",
+  "repeater_refreshRadioSettings": "重置收音机设置",
+  "repeater_refreshTxPower": "重置 TX 电源",
+  "repeater_refreshLocationSettings": "重置位置设置",
+  "repeater_refreshPacketForwarding": "刷新包转发",
+  "repeater_refreshGuestAccess": "重新获取访客访问权限",
+  "repeater_refreshPrivacyMode": "重置隐私模式",
+  "repeater_refreshAdvertisementSettings": "重置广告设置",
+  "repeater_refreshed": "{label} refreshed",
+  "@repeater_refreshed": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_errorRefreshing": "[保存：{label}]\n刷新 {label} 时出错",
+  "@repeater_errorRefreshing": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_cliTitle": "重复器命令行界面",
+  "repeater_debugNextCommand": "调试下一条命令",
+  "repeater_commandHelp": "帮助",
+  "repeater_clearHistory": "清晰的历史",
+  "repeater_noCommandsSent": "尚未发送任何指令",
+  "repeater_typeCommandOrUseQuick": "在下方输入命令，或使用快捷命令。",
+  "repeater_enterCommandHint": "输入命令...",
+  "repeater_previousCommand": "之前的命令",
+  "repeater_nextCommand": "下一个指令",
+  "repeater_enterCommandFirst": "首先输入一个命令",
+  "repeater_cliCommandFrameTitle": "CLI 命令框架",
+  "repeater_cliCommandError": "Error: {error}",
+  "@repeater_cliCommandError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_cliQuickGetName": "获取姓名",
+  "repeater_cliQuickGetRadio": "收听广播",
+  "repeater_cliQuickGetTx": "获取 TX",
+  "repeater_cliQuickNeighbors": "邻居",
+  "repeater_cliQuickVersion": "版本",
+  "repeater_cliQuickAdvertise": "发布广告",
+  "repeater_cliQuickClock": "时钟",
+  "repeater_cliHelpAdvert": "发送广告资料包",
+  "repeater_cliHelpReboot": "重置设备。 (请注意，您可能会收到“超时”错误，这是正常的现象)",
+  "repeater_cliHelpClock": "显示每个设备的当前时间。",
+  "repeater_cliHelpPassword": "为设备设置新的管理员密码。",
+  "repeater_cliHelpVersion": "显示设备版本和固件构建日期。",
+  "repeater_cliHelpClearStats": "重置各种统计指标，将其设置为零。",
+  "repeater_cliHelpSetAf": "设置时间因素。",
+  "repeater_cliHelpSetTx": "设置 LoRa 传输功率，单位为 dBm (相对于参考值)。 (重启以应用更改)",
+  "repeater_cliHelpSetRepeat": "启用或禁用此节点的重复器功能。",
+  "repeater_cliHelpSetAllowReadOnly": "（房间服务器）如果设置为“开启”，则允许使用空密码登录，但无法向房间发送消息（只能进行读取）。",
+  "repeater_cliHelpSetFloodMax": "设置最大传入数据包的跳数（如果大于或等于最大值，则不进行转发）。",
+  "repeater_cliHelpSetIntThresh": "设置干扰阈值（以dB为单位）。默认值为14。将设置为0以禁用频道干扰检测。",
+  "repeater_cliHelpSetAgcResetInterval": "设置间隔时间，用于重置自动增益控制器。设置为 0 以禁用。",
+  "repeater_cliHelpSetMultiAcks": "启用或禁用“双重确认”功能。",
+  "repeater_cliHelpSetAdvertInterval": "设置定时器间隔，单位为分钟，用于发送本地（无中继）的广告数据包。 将设置为 0 以禁用。",
+  "repeater_cliHelpSetFloodAdvertInterval": "设置定时器间隔时间为小时，以便发送广告信息包。将设置为 0 以禁用。",
+  "repeater_cliHelpSetGuestPassword": "设置/更新访客密码。 (对于访客，登录请求可以发送“获取统计”请求)",
+  "repeater_cliHelpSetName": "设置广告名称。",
+  "repeater_cliHelpSetLat": "设置广告地图的纬度。（以十进制表示）",
+  "repeater_cliHelpSetLon": "设置广告地图的经度。 (十进制度)",
+  "repeater_cliHelpSetRadio": "完全重新设置无线电参数，并保存到偏好设置。需要执行“重启”命令才能生效。",
+  "repeater_cliHelpSetRxDelay": "设置（实验性）：设置一个基础值（必须大于1才能生效），用于对接收到的数据包进行轻微延迟处理，该延迟值基于信号强度/评分。将该值设置为0以禁用。",
+  "repeater_cliHelpSetTxDelay": "通过将一个因子与“浮动模式”数据包的时间在空中停留时间相乘，并结合随机的“时隙”系统，来延迟其转发，从而降低数据包冲突的概率。",
+  "repeater_cliHelpSetDirectTxDelay": "与txdelay相同，但用于对直接模式数据包的转发进行随机延迟。",
+  "repeater_cliHelpSetBridgeEnabled": "启用/禁用桥接。",
+  "repeater_cliHelpSetBridgeDelay": "在重新发送数据包之前，设置延迟时间。",
+  "repeater_cliHelpSetBridgeSource": "选择桥接器是否会转发收到的数据包，还是转发发送的数据包。",
+  "repeater_cliHelpSetBridgeBaud": "为 RS232 桥接设置串行链路的波特率。",
+  "repeater_cliHelpSetBridgeSecret": "设置 ESPNOW 桥的秘密。",
+  "repeater_cliHelpSetAdcMultiplier": "设置自定义因子，用于调整报告的电池电压（仅在特定板上支持）。",
+  "repeater_cliHelpTempRadio": "设置临时收音机参数，持续指定分钟数，之后恢复到原始收音机参数。（不保存到偏好设置）。",
+  "repeater_cliHelpSetPerm": "修改 ACL。如果 \"permissions\" 的值为 0，则删除与 pubkey 相关的条目。如果 pubkey-hex 完整且当前不在 ACL 中，则添加新的条目。通过匹配 pubkey 相关的前缀来更新条目。不同固件角色的权限位有所不同，但低 2 位分别对应：0 (访客)、1 (只读)、2 (读写)、3 (管理员)。",
+  "repeater_cliHelpGetBridgeType": "支持桥接模式、RS232、ESPNOW。",
+  "repeater_cliHelpLogStart": "开始将数据包记录到文件系统。",
+  "repeater_cliHelpLogStop": "停止将数据包记录写入文件系统。",
+  "repeater_cliHelpLogErase": "从文件系统中删除所有已记录的包信息。",
+  "repeater_cliHelpNeighbors": "显示了通过零跳广告收到的其他复用节点列表。 每行包含：id-前缀-十六进制：时间戳：信噪比（4次）",
+  "repeater_cliHelpNeighborRemove": "从邻居列表中删除第一个匹配项（通过十六进制的 pubkey 前缀）。",
+  "repeater_cliHelpRegion": "（仅限序列）列出所有已定义的区域以及当前的防洪许可。",
+  "repeater_cliHelpRegionLoad": "请注意：这是一个特殊的、包含多个命令的调用方式。 之后的每个命令都是一个区域名称（使用空格进行缩进，以表示父级关系，至少需要一个空格）。 结束方式是通过发送一个空行/命令。",
+  "repeater_cliHelpRegionGet": "搜索具有指定名称前缀的区域（或使用“*”表示全局范围）。 返回结果为“-> region-name (parent-name) 'F'”",
+  "repeater_cliHelpRegionPut": "添加或更新一个区域定义，并指定其名称。",
+  "repeater_cliHelpRegionRemove": "删除具有指定名称的区域定义。 (必须与指定名称完全匹配，且不能有子区域)",
+  "repeater_cliHelpRegionAllowf": "为指定区域设置“洪水”权限。（“*”表示全局/旧版本范围）",
+  "repeater_cliHelpRegionDenyf": "移除指定区域的“洪水”权限。（请注意：目前不建议在全局/旧版本中使用此功能！！）",
+  "repeater_cliHelpRegionHome": "回复当前“主区域”。（此功能尚未应用，仅供未来使用）",
+  "repeater_cliHelpRegionHomeSet": "设置“主”区域。",
+  "repeater_cliHelpRegionSave": "将区域列表/地图保存到存储中。",
+  "repeater_cliHelpGps": "显示 GPS 状态。当 GPS 处于关闭状态时，它只会显示“关闭”；当 GPS 处于开启状态时，它会显示“开启”、“状态”、“定位”、“卫星数量”等信息。",
+  "repeater_cliHelpGpsOnOff": "切换 GPS 设备的电源状态。",
+  "repeater_cliHelpGpsSync": "将节点时间与 GPS 钟同步。",
+  "repeater_cliHelpGpsSetLoc": "将节点的坐标设置为 GPS 坐标，并保存设置。",
+  "repeater_cliHelpGpsAdvert": "设置节点的位置广告配置：\n- none：不将位置信息包含在广告中\n- share：共享 GPS 位置（从 SensorManager 获取）\n- prefs：在偏好设置中展示的位置",
+  "repeater_cliHelpGpsAdvertSet": "设置广告的位置配置。",
+  "repeater_commandsListTitle": "命令列表",
+  "repeater_commandsListNote": "请注意：对于各种“set ...”命令，也存在“get ...”命令。",
+  "repeater_general": "通用",
+  "repeater_settingsCategory": "设置",
+  "repeater_bridge": "桥",
+  "repeater_logging": "记录",
+  "repeater_neighborsRepeaterOnly": "邻居（仅限重复功能）",
+  "repeater_regionManagementRepeaterOnly": "区域管理（仅限重复站点）",
+  "repeater_regionNote": "区域命令已引入，用于管理区域定义和权限。",
+  "repeater_gpsManagement": "GPS 管理",
+  "repeater_gpsNote": "已引入 GPS 命令，用于管理与位置相关的任务。",
+  "telemetry_receivedData": "接收到的遥测数据",
+  "telemetry_requestTimeout": "遥测请求超时。",
+  "telemetry_errorLoading": "Error loading telemetry: {error}",
+  "@telemetry_errorLoading": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_noData": "没有可用的 telemetry 数据。",
+  "telemetry_channelTitle": "频道 {channel}",
+  "@telemetry_channelTitle": {
+    "placeholders": {
+      "channel": {
+        "type": "int"
+      }
+    }
+  },
+  "telemetry_batteryLabel": "电池",
+  "telemetry_voltageLabel": "电压",
+  "telemetry_mcuTemperatureLabel": "MCU 的温度",
+  "telemetry_temperatureLabel": "温度",
+  "telemetry_currentLabel": "当前",
+  "telemetry_batteryValue": "{percent}% / {volts}V",
+  "@telemetry_batteryValue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_voltageValue": "{volts}V",
+  "@telemetry_voltageValue": {
+    "placeholders": {
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_currentValue": "{amps}A",
+  "@telemetry_currentValue": {
+    "placeholders": {
+      "amps": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_temperatureValue": "{celsius}°C / {fahrenheit}°F",
+  "@telemetry_temperatureValue": {
+    "placeholders": {
+      "celsius": {
+        "type": "String"
+      },
+      "fahrenheit": {
+        "type": "String"
+      }
+    }
+  },
+  "neighbors_receivedData": "已收到邻居信息",
+  "neighbors_requestTimedOut": "邻居要求停止干扰。",
+  "neighbors_errorLoading": "Error loading neighbors: {error}",
+  "@neighbors_errorLoading": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "neighbors_repeatersNeighbors": "重复使用的邻居",
+  "neighbors_noData": "没有可用的邻居信息。",
+  "neighbors_unknownContact": "Unknown {pubkey}",
+  "@neighbors_unknownContact": {
+    "placeholders": {
+      "pubkey": {
+        "type": "String"
+      }
+    }
+  },
+  "neighbors_heardAgo": "Heard: {time} ago",
+  "@neighbors_heardAgo": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_title": "数据包路径",
+  "channelPath_viewMap": "查看地图",
+  "channelPath_otherObservedPaths": "其他观察到的路径",
+  "channelPath_repeaterHops": "复用跳跃",
+  "channelPath_noHopDetails": "对于此包，未提供详细信息。",
+  "channelPath_messageDetails": "消息详情",
+  "channelPath_senderLabel": "发件人",
+  "channelPath_timeLabel": "时间",
+  "channelPath_repeatsLabel": "重复",
+  "channelPath_pathLabel": "路径 {index}",
+  "channelPath_observedLabel": "观察到的",
+  "channelPath_observedPathTitle": "Observed path {index} • {hops}",
+  "@channelPath_observedPathTitle": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "hops": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_noLocationData": "没有位置信息",
+  "channelPath_timeWithDate": "{day}/{month} {time}",
+  "@channelPath_timeWithDate": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_timeOnly": "{time}",
+  "@channelPath_timeOnly": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_unknownPath": "未知",
+  "channelPath_floodPath": "洪水",
+  "channelPath_directPath": "直接",
+  "channelPath_observedZeroOf": "0 of {total} hops",
+  "@channelPath_observedZeroOf": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_observedSomeOf": "{observed} of {total} hops",
+  "@channelPath_observedSomeOf": {
+    "placeholders": {
+      "observed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_mapTitle": "路线图",
+  "channelPath_noRepeaterLocations": "这条路径上没有可用的中继器位置。",
+  "channelPath_primaryPath": "路径 {index} (主要路径)",
+  "@channelPath_primaryPath": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "@channelPath_pathLabel": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_pathLabelTitle": "路径",
+  "channelPath_observedPathHeader": "观察路径",
+  "channelPath_selectedPathLabel": "{label} • {prefixes}",
+  "@channelPath_selectedPathLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "prefixes": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_noHopDetailsAvailable": "对于此包裹，尚无详细信息。",
+  "channelPath_unknownRepeater": "未知的重复设备",
+  "community_title": "社区",
+  "community_create": "建立社区",
+  "community_createDesc": "创建一个新的社群，并通过二维码进行分享。",
+  "community_join": "加入",
+  "community_joinTitle": "加入社区",
+  "community_joinConfirmation": "Do you want to join the community \"{name}\"?",
+  "@community_joinConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_scanQr": "扫描社区二维码",
+  "community_scanInstructions": "将相机对准社区的二维码。",
+  "community_showQr": "显示二维码",
+  "community_publicChannel": "社区公共",
+  "community_hashtagChannel": "社区标签",
+  "community_name": "社区名称",
+  "community_enterName": "请输入社区名称",
+  "community_created": "Community \"{name}\" created",
+  "@community_created": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_joined": "Joined community \"{name}\"",
+  "@community_joined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_qrTitle": "分享社区",
+  "community_qrInstructions": "Scan this QR code to join \"{name}\"",
+  "@community_qrInstructions": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_hashtagPrivacyHint": "仅社区成员才能加入社区话题标签的频道。",
+  "community_invalidQrCode": "无效的社区二维码",
+  "community_alreadyMember": "已经是会员",
+  "community_alreadyMemberMessage": "You are already a member of \"{name}\".",
+  "@community_alreadyMemberMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_addPublicChannel": "添加公共频道",
+  "community_addPublicChannelHint": "自动添加该社区的公共频道",
+  "community_noCommunities": "目前还没有任何社区加入。",
+  "community_scanOrCreate": "扫描二维码或创建社群，即可开始。",
+  "community_manageCommunities": "管理社区",
+  "community_delete": "退出社区",
+  "community_deleteConfirm": "是否要删除\"{name}\"？",
+  "@community_deleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_deleteChannelsWarning": "这将同时删除 {count} 个频道及其所有消息。",
+  "@community_deleteChannelsWarning": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_deleted": "Left community \"{name}\"",
+  "@community_deleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_regenerateSecret": "恢复秘密",
+  "community_regenerateSecretConfirm": "[保存：{name}]\n是否需要重新生成\"{name}\"的密钥？所有成员都需要扫描新的二维码才能继续进行通信。",
+  "@community_regenerateSecretConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_regenerate": "再生",
+  "community_secretRegenerated": "[保护对象：{name}]\n秘密已恢复至\"{name}\"",
+  "@community_secretRegenerated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_updateSecret": "更新秘密",
+  "community_secretUpdated": "“{name}”的秘密已更新",
+  "@community_secretUpdated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_scanToUpdateSecret": "Scan the new QR code to update the secret for \"{name}\"",
+  "@community_scanToUpdateSecret": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_addHashtagChannel": "添加社区标签",
+  "community_addHashtagChannelDesc": "为这个社区创建一个带有话题标签的频道",
+  "community_selectCommunity": "选择社区",
+  "community_regularHashtag": "常用标签",
+  "community_regularHashtagDesc": "公共话题标签（任何人都可以参与）",
+  "community_communityHashtag": "社区标签",
+  "community_communityHashtagDesc": "仅限社区成员",
+  "community_forCommunity": "For {name}",
+  "@community_forCommunity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "listFilter_tooltip": "筛选和排序",
+  "listFilter_sortBy": "按排序",
+  "listFilter_latestMessages": "最新消息",
+  "listFilter_heardRecently": "最近听到的",
+  "listFilter_az": "A 到 Z",
+  "listFilter_filters": "过滤器",
+  "listFilter_all": "全部",
+  "listFilter_users": "用户",
+  "listFilter_repeaters": "重复器",
+  "listFilter_roomServers": "房间服务器",
+  "listFilter_unreadOnly": "仅显示未读消息",
+  "listFilter_newGroup": "新的团体",
+  "pathTrace_you": "您",
+  "pathTrace_failed": "路径追踪失败。",
+  "pathTrace_notAvailable": "无法获取路径信息。",
+  "pathTrace_refreshTooltip": "重新绘制路径。",
+  "contacts_pathTrace": "路径追踪",
+  "contacts_ping": "乒",
+  "contacts_repeaterPathTrace": "追踪路径至中继器",
+  "contacts_repeaterPing": "中继器",
+  "contacts_roomPathTrace": "追踪到房间服务器",
+  "contacts_roomPing": "会议室服务器",
+  "contacts_chatTraceRoute": "路径跟踪路线",
+  "contacts_pathTraceTo": "追踪路径至 {name}",
+  "@contacts_pathTraceTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_clipboardEmpty": "剪贴板为空。",
+  "contacts_invalidAdvertFormat": "无效的联系信息",
+  "contacts_contactImported": "已建立联系。",
+  "contacts_contactImportFailed": "未能导入联系人。",
+  "contacts_zeroHopAdvert": "零跳广告",
+  "contacts_floodAdvert": "防洪广告",
+  "contacts_copyAdvertToClipboard": "复制广告到剪贴板",
+  "contacts_addContactFromClipboard": "从剪贴板添加联系人",
+  "contacts_ShareContact": "复制联系方式到剪贴板",
+  "contacts_ShareContactZeroHop": "通过广告分享联系方式",
+  "contacts_zeroHopContactAdvertSent": "通过广告获取联系方式。",
+  "contacts_zeroHopContactAdvertFailed": "发送联系方式失败。",
+  "contacts_contactAdvertCopied": "广告内容已复制到剪贴板。",
+  "contacts_contactAdvertCopyFailed": "将广告复制到剪贴板操作失败。",
+  "notification_activityTitle": "MeshCore 活动",
+  "notification_messagesCount": "{count} 条消息",
+  "notification_channelMessagesCount": "{count} 条频道消息",
+  "notification_newNodesCount": "{count} 个新节点",
+  "notification_newTypeDiscovered": "发现新 {contactType}",
+  "notification_receivedNewMessage": "收到新消息",
+  "settings_gpxExportRepeaters": "导出重复器/房间服务器到GPX",
+  "settings_gpxExportRepeatersSubtitle": "导出带有位置的重复器/房间服务器到GPX文件。",
+  "settings_gpxExportContactsSubtitle": "导出带有位置的伙伴到GPX文件。",
+  "settings_gpxExportNotAvailable": "您的设备/操作系统不支持",
+  "settings_gpxExportSuccess": "成功导出GPX文件",
+  "settings_gpxExportError": "导出时发生错误",
+  "settings_gpxExportRepeatersRoom": "重复器和房间服务器位置",
+  "settings_gpxExportChat": "伴侣位置",
+  "settings_gpxExportAll": "导出所有联系人到GPX",
+  "settings_gpxExportContacts": "导出伴侣到GPX",
+  "settings_gpxExportAllSubtitle": "导出所有带有位置的联系人到GPX文件。",
+  "settings_gpxExportAllContacts": "所有联系人位置",
+  "settings_gpxExportNoContacts": "没有联系人可导出",
+  "settings_gpxExportShareText": "来自Gulf Coast Mesh App的导出地图数据",
+  "settings_gpxExportShareSubject": "Gulf Coast Mesh App GPX 地图数据导出",
+  "pathTrace_someHopsNoLocation": "其中一个或多个啤酒花缺少位置！",
+  "map_tapToAdd": "点击节点将其添加到路径中",
+  "pathTrace_clearTooltip": "清除路径",
+  "map_pathTraceCancelled": "路径跟踪已取消",
+  "map_removeLast": "删除最后一个",
+  "map_runTrace": "运行路径跟踪",
+  "scanner_bluetoothOffMessage": "请打开蓝牙功能，以便搜索设备。",
+  "scanner_bluetoothOff": "蓝牙已关闭",
+  "scanner_enableBluetooth": "启用蓝牙",
+  "snrIndicator_lastSeen": "最近访问",
+  "snrIndicator_nearByRepeaters": "附近的重复器",
+  "chat_ShowAllPaths": "显示所有路径",
+  "settings_clientRepeat": "离网重复",
+  "settings_clientRepeatSubtitle": "允许此设备重复发送网状数据包给其他设备",
+  "settings_clientRepeatFreqWarning": "离网重复通信需要使用 433、869 或 918 兆赫兹的频率。",
+  "settings_aboutOpenMeteoAttribution": "LOS 高程数据:Open-Meteo (CC BY 4.0)",
+  "appSettings_unitsTitle": "单位",
+  "appSettings_unitsMetric": "公制（米/公里）",
+  "appSettings_unitsImperial": "英制 (ft / mi)",
+  "map_lineOfSight": "视线",
+  "map_losScreenTitle": "视线",
+  "losSelectStartEnd": "选择 LOS 的起始节点和结束节点。",
+  "losRunFailed": "视线检查失败：{error}",
+  "@losRunFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "losClearAllPoints": "清除所有点",
+  "losRunToViewElevationProfile": "运行 LOS 查看高程剖面",
+  "losMenuTitle": "服务水平菜单",
+  "losMenuSubtitle": "点击节点或长按地图以获取自定义点",
+  "losShowDisplayNodes": "显示显示节点",
+  "losCustomPoints": "自定义积分",
+  "losCustomPointLabel": "自定义 {index}",
+  "@losCustomPointLabel": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "losPointA": "A点",
+  "losPointB": "B点",
+  "losAntennaA": "天线 A： {value} {unit}",
+  "@losAntennaA": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "losAntennaB": "天线 B：{value} {unit}",
+  "@losAntennaB": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "losRun": "运行视距",
+  "losNoElevationData": "无海拔数据",
+  "losProfileClear": "{distance} {distanceUnit}，清除 LOS，最小间隙 {clearance} {heightUnit}",
+  "@losProfileClear": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      },
+      "distanceUnit": {
+        "type": "String"
+      },
+      "clearance": {
+        "type": "String"
+      },
+      "heightUnit": {
+        "type": "String"
+      }
+    }
+  },
+  "losProfileBlocked": "{distance} {distanceUnit}，被 {obstruction} {heightUnit} 阻止",
+  "@losProfileBlocked": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      },
+      "distanceUnit": {
+        "type": "String"
+      },
+      "obstruction": {
+        "type": "String"
+      },
+      "heightUnit": {
+        "type": "String"
+      }
+    }
+  },
+  "losStatusChecking": "洛斯：正在检查...",
+  "losStatusNoData": "LOS：无数据",
+  "losStatusSummary": "LOS：{clear}/{total} 清除，{blocked} 阻塞，{unknown} 未知",
+  "@losStatusSummary": {
+    "placeholders": {
+      "clear": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "blocked": {
+        "type": "int"
+      },
+      "unknown": {
+        "type": "int"
+      }
+    }
+  },
+  "losErrorElevationUnavailable": "一个或多个样本的海拔数据不可用。",
+  "losErrorInvalidInput": "用于 LOS 计算的点/高程数据无效。",
+  "losRenameCustomPoint": "重命名自定义点",
+  "losPointName": "点名称",
+  "losShowPanelTooltip": "显示 LOS 面板",
+  "losHidePanelTooltip": "隐藏 LOS 面板",
+  "losElevationAttribution": "高程数据：Open-Meteo (CC BY 4.0)",
+  "chats_searchConversations": "Search conversations...",
+  "chats_noConversationsFound": "No conversations found",
+  "status_repeat": "Repeat",
+  "messageStatus_failed": "Failed",
+  "messageStatus_sending": "Sending...",
+  "messageStatus_retrying": "Retrying {retryCount}/{maxRetries}",
+  "@messageStatus_retrying": {
+    "placeholders": {
+      "retryCount": { "type": "int" },
+      "maxRetries": { "type": "int" }
+    }
+  },
+  "messageStatus_delivered": "Delivered",
+  "messageStatus_sent": "Sent",
+  "nav_analyzer": "Analyzer",
+  "appSettings_meshAnalyzer": "Show Mesh Analyzer tab",
+  "appSettings_meshAnalyzerSubtitle": "Live packet visualization dashboard",
+  "analyzer_title": "Mesh Analyzer",
+  "analyzer_pause": "Pause",
+  "analyzer_resume": "Resume",
+  "analyzer_clear": "Clear",
+  "analyzer_filterAll": "All",
+  "analyzer_filterDM": "DMs",
+  "analyzer_filterChannel": "Channels",
+  "analyzer_filterAdvert": "Adverts",
+  "analyzer_filterDiscovery": "Discovery",
+  "analyzer_noPackets": "No packets received yet",
+  "analyzer_noChats": "No conversations",
+  "analyzer_packets": "Packets",
+  "analyzer_chats": "Chats",
+  "analyzer_back": "Back",
+  "appSettings_nodeBlocking": "屏蔽节点",
+  "appSettings_nodeBlockingSubtitle": "在地图、联系人和聊天中隐藏你选择的节点，并静音其提醒。仅限应用内：不会从你的电台中删除任何内容。",
+  "appSettings_blockedNodes": "已屏蔽节点",
+  "appSettings_blockedNodesCount": "{count, plural, =0{暂无已屏蔽节点} =1{已屏蔽 1 个节点} other{已屏蔽 {count} 个节点}}",
+  "blockedNodes_title": "已屏蔽节点",
+  "blockedNodes_howItWorks": "屏蔽的工作方式",
+  "blockedNodes_infoHidden": "在你的地图、联系人和聊天中隐藏",
+  "blockedNodes_infoMuted": "不再提示其新节点，也不再提示其消息通知",
+  "blockedNodes_infoKept": "不会删除任何内容。它们仍保留在你的配套电台上，其消息也会保留",
+  "blockedNodes_infoRelay": "已屏蔽的中继器仍可在网络中转发你的消息",
+  "blockedNodes_infoChannels": "其在频道中的消息仍会显示",
+  "blockedNodes_emptyTitle": "暂无已屏蔽节点",
+  "blockedNodes_emptyHint": "在联系人或地图上长按节点，然后选择“屏蔽节点”。",
+  "blockedNodes_unblock": "取消屏蔽",
+  "blockedNodes_unblockAll": "全部取消屏蔽",
+  "blockedNodes_unblockAllConfirm": "{count, plural, =1{取消屏蔽 1 个节点？它将重新显示在你的地图和联系人中。} other{取消屏蔽全部 {count} 个节点？它们将重新显示在你的地图和联系人中。}}",
+  "blockedNodes_unknownNode": "未知节点",
+  "blockedNodes_blockedOn": "屏蔽于 {date}",
+  "blockedNodes_blockAction": "屏蔽节点",
+  "blockedNodes_blockConfirmTitle": "屏蔽 {name}？",
+  "blockedNodes_blockConfirmBody": "它将在你的地图、联系人和聊天中隐藏，你也不会再收到它的提醒或消息通知。你的电台上不会删除任何内容。你可以随时在“应用设置 > 实验性 > 已屏蔽节点”中取消屏蔽。",
+  "blockedNodes_blockConfirmButton": "屏蔽",
+  "blockedNodes_blocked": "已屏蔽 {name}",
+  "blockedNodes_unblocked": "已取消屏蔽 {name}",
+  "blockedNodes_undo": "撤销"
+}

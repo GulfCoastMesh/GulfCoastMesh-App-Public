@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Declares Gulf Coast Mesh App to Android Auto as a notification-based messaging app.
+
+  With "notification", Android Auto reads MessagingStyle notifications aloud and
+  drives the reply/mark-as-read actions through its own voice UI, so the app
+  never renders anything on the car screen and inherits the platform's
+  driver-distraction handling rather than reimplementing it.
+-->
+<automotiveApp>
+    <uses name="notification" />
+</automotiveApp>

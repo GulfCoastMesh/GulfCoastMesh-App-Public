@@ -1,0 +1,46 @@
+name: Flutter and Dart
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - bugs-features
+      - MrSharky-rework
+
+jobs:
+  analyze:
+    runs-on: [self-hosted, Linux]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2.22.0
+        with:
+          channel: stable
+          # Avoid large SDK cache saves that can exhaust runner disk.
+          cache: false
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze --fatal-infos --fatal-warnings
+
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed lib/ test/
+
+      - name: Run tests
+        run: flutter test -r github
+
+      - name: Browser startup regression
+        run: |
+          CHROME_EXECUTABLE="$(command -v chromium || command -v google-chrome)"
+          export CHROME_EXECUTABLE
+          # Flutter's browser test server serves test/, not the asset bundle.
+          ln -s ../build/unit_test_assets test/assets
+          trap 'rm test/assets' EXIT
+          flutter test --platform chrome test/browser_startup_test.dart -r github

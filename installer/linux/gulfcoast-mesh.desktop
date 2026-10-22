@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Gulf Coast Mesh
+Comment=MeshCore LoRa mesh messenger
+Exec=gulf_coast_mesh_app
+Icon=gulfcoast-mesh
+Terminal=false
+Categories=Network;Utility;
+Keywords=mesh;LoRa;MeshCore;messaging;
+StartupNotify=true

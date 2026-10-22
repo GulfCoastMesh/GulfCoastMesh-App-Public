@@ -1,0 +1,1775 @@
+{
+  "@@locale": "it",
+  "appTitle": "Gulf Coast Mesh App",
+  "nav_contacts": "Contatti",
+  "nav_channels": "Canali",
+  "nav_map": "Mappa",
+  "nav_chats": "Chat",
+  "nav_nodes": "Nodi",
+  "nav_settings": "Impostazioni",
+  "common_cancel": "Annulla",
+  "common_connect": "Connetti",
+  "common_unknownDevice": "Dispositivo sconosciuto",
+  "common_save": "Salva",
+  "common_delete": "Elimina",
+  "common_close": "Chiudi",
+  "common_edit": "Modifica",
+  "common_add": "Aggiungi",
+  "common_settings": "Impostazioni",
+  "common_disconnect": "Disconnetti",
+  "common_connected": "Connesso",
+  "common_disconnected": "Disconnesso",
+  "common_create": "Crea",
+  "common_continue": "Continua",
+  "common_share": "Condividi",
+  "common_copy": "Copia",
+  "common_retry": "Riprova",
+  "common_hide": "Nascondi",
+  "common_remove": "Elimina",
+  "common_enable": "Abilita",
+  "common_disable": "Disattivare",
+  "common_reboot": "Riavvia",
+  "common_loading": "Caricamento...",
+  "common_notAvailable": "—",
+  "common_voltageValue": "{volts} V",
+  "@common_voltageValue": {
+    "placeholders": {
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "common_percentValue": "{percent}%",
+  "@common_percentValue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "scanner_title": "Gulf Coast Mesh App",
+  "scanner_scanning": "Scansione in corso per i dispositivi...",
+  "scanner_connecting": "Connessione...",
+  "scanner_disconnecting": "Disconnessione...",
+  "scanner_notConnected": "Non connesso",
+  "scanner_connectedTo": "Connesso a {deviceName}",
+  "@scanner_connectedTo": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_searchingDevices": "Ricerca dispositivi MeshCore...",
+  "scanner_tapToScan": "Tocca Scansiona per trovare i dispositivi MeshCore",
+  "scanner_connectionFailed": "Connessione fallita: {error}",
+  "@scanner_connectionFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_stop": "Interrompere",
+  "scanner_scan": "Scansiona",
+  "device_quickSwitch": "Passa velocemente",
+  "device_meshcore": "MeshCore",
+  "settings_title": "Impostazioni",
+  "settings_deviceInfo": "Informazioni Dispositivo",
+  "settings_appSettings": "Impostazioni App",
+  "settings_appSettingsSubtitle": "Notifiche, messaggi e preferenze della mappa",
+  "settings_nodeSettings": "Impostazioni Nodo",
+  "settings_nodeName": "Nome Nodo",
+  "settings_nodeNameNotSet": "Non impostato",
+  "settings_nodeNameHint": "Inserisci nome nodo",
+  "settings_nodeNameUpdated": "Nome aggiornato",
+  "settings_radioSettings": "Impostazioni Radio",
+  "settings_radioSettingsSubtitle": "Frequenza, potenza, fattore di dispersione",
+  "settings_radioSettingsUpdated": "Impostazioni radio aggiornate",
+  "settings_location": "Posizione",
+  "settings_locationSubtitle": "coordinate GPS",
+  "settings_locationUpdated": "Posizione aggiornata",
+  "settings_locationBothRequired": "Inserire sia la latitudine che la longitudine.",
+  "settings_locationInvalid": "Latitudine o longitudine non valida.",
+  "settings_latitude": "Latitudine",
+  "settings_longitude": "Longitudine",
+  "settings_privacyMode": "Modalità Privacy",
+  "settings_privacyModeSubtitle": "Nascondere nome/luogo negli annunci",
+  "settings_privacyModeToggle": "Attiva la modalità privacy per nascondere il tuo nome e la tua posizione negli annunci.",
+  "settings_privacyModeEnabled": "Modalità privacy abilitata",
+  "settings_privacyModeDisabled": "Modalità privacy disabilitata",
+  "settings_actions": "Azioni",
+  "settings_sendAdvertisement": "Invia Annuncio",
+  "settings_sendAdvertisementSubtitle": "Presenza trasmessa ora",
+  "settings_advertisementSent": "Annuncio inviato",
+  "settings_syncTime": "Tempo di sincronizzazione",
+  "settings_syncTimeSubtitle": "Imposta l'orologio del dispositivo sull'ora del telefono",
+  "settings_timeSynchronized": "Sincronizzato nel tempo",
+  "settings_refreshContacts": "Aggiorna Contatti",
+  "settings_refreshContactsSubtitle": "Ricaricare l'elenco dei contatti dal dispositivo",
+  "settings_rebootDevice": "Riavvia Dispositivo",
+  "settings_rebootDeviceSubtitle": "Riavviare il dispositivo MeshCore",
+  "settings_rebootDeviceConfirm": "Sei sicuro di voler riavviare il dispositivo? Sarai disconnesso.",
+  "settings_debug": "Risoluzione dei problemi",
+  "settings_bleDebugLog": "Log di Debug BLE",
+  "settings_bleDebugLogSubtitle": "Comandi, risposte e dati grezzi BLE",
+  "settings_appDebugLog": "Log di Debug dell'App",
+  "settings_appDebugLogSubtitle": "Messaggi di debug dell'applicazione",
+  "settings_about": "Informazioni",
+  "settings_aboutVersion": "Gulf Coast Mesh App v{version}",
+  "@settings_aboutVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settings_aboutLegalese": "Gulf Coast Mesh App 2024",
+  "settings_aboutDescription": "Un client Flutter open-source per i dispositivi di rete mesh LoRa Core di MeshCore.",
+  "settings_infoName": "Nome",
+  "settings_infoId": "ID",
+  "settings_infoStatus": "Stato",
+  "settings_infoBattery": "Batteria",
+  "settings_infoPublicKey": "Chiave Pubblica",
+  "settings_infoContactsCount": "Numero contatti",
+  "settings_infoChannelCount": "Numero Canale",
+  "settings_presets": "Preset",
+  "settings_frequency": "Frequenza (MHz)",
+  "settings_frequencyHelper": "300,0 - 2500,0",
+  "settings_frequencyInvalid": "Frequenza non valida (300-2500 MHz)",
+  "settings_bandwidth": "Larghezza di banda",
+  "settings_spreadingFactor": "Fattore di Spettro",
+  "settings_codingRate": "Tasso di Codifica",
+  "settings_txPower": "TX Potenza (dBm)",
+  "settings_txPowerHelper": "0 - 22",
+  "settings_txPowerInvalid": "Potere TX non valido (0-22 dBm)",
+  "settings_error": "Errore: {message}",
+  "@settings_error": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "appSettings_title": "Impostazioni App",
+  "appSettings_appearance": "Aspetto",
+  "appSettings_theme": "Tema",
+  "appSettings_themeSystem": "Impostazione predefinita del sistema",
+  "appSettings_themeLight": "Luce",
+  "appSettings_themeDark": "Scuro",
+  "appSettings_language": "Lingua",
+  "appSettings_languageSystem": "Predefinito di sistema",
+  "appSettings_languageEn": "English",
+  "appSettings_languageFr": "Français",
+  "appSettings_languageEs": "Español",
+  "appSettings_languageDe": "Deutsch",
+  "appSettings_languagePl": "Polski",
+  "appSettings_languageSl": "Slovenščina",
+  "appSettings_languagePt": "Português",
+  "appSettings_languageIt": "Italiano",
+  "appSettings_languageZh": "中文",
+  "appSettings_languageSv": "Svenska",
+  "appSettings_languageNl": "Nederlands",
+  "appSettings_languageSk": "Slovenčina",
+  "appSettings_languageBg": "Български",
+  "appSettings_notifications": "Notifiche",
+  "appSettings_enableNotifications": "Abilita Notifiche",
+  "appSettings_enableNotificationsSubtitle": "Ricevi notifiche per messaggi e annunci",
+  "appSettings_notificationPermissionDenied": "Permesso di notifica negato",
+  "appSettings_notificationsEnabled": "Notifiche abilitate",
+  "appSettings_notificationsDisabled": "Notifiche disattivate",
+  "appSettings_messageNotifications": "Notifiche Messaggi",
+  "appSettings_messageNotificationsSubtitle": "Mostra notifica all'arrivo di nuovi messaggi",
+  "appSettings_channelMessageNotifications": "Notifiche Messaggi Canale",
+  "appSettings_channelMessageNotificationsSubtitle": "Mostra notifica all'arrivo di messaggi nel canale",
+  "appSettings_advertisementNotifications": "Notifiche Pubblicitarie",
+  "appSettings_advertisementNotificationsSubtitle": "Mostra notifica quando vengono scoperti nuovi nodi",
+  "appSettings_messaging": "Messaggi",
+  "appSettings_clearPathOnMaxRetry": "Cancella Percorso su Massimo Riprovo",
+  "appSettings_clearPathOnMaxRetrySubtitle": "Reimposta il percorso di contatto dopo 5 tentativi di invio falliti",
+  "appSettings_pathsWillBeCleared": "I percorsi verranno puliti dopo 5 tentativi falliti.",
+  "appSettings_pathsWillNotBeCleared": "I percorsi non verranno eliminati automaticamente.",
+  "appSettings_autoRouteRotation": "Rotazione Percorso Automatico",
+  "appSettings_autoRouteRotationSubtitle": "Alterna tra i percorsi migliori e la modalità alluvione",
+  "appSettings_autoRouteRotationEnabled": "Rotazione percorso automatico abilitata",
+  "appSettings_autoRouteRotationDisabled": "Rotazione del percorso automatico disabilitata",
+  "appSettings_battery": "Batteria",
+  "appSettings_batteryChemistry": "Chimica della batteria",
+  "appSettings_batteryChemistryPerDevice": "Impostazione per dispositivo ({deviceName})",
+  "@appSettings_batteryChemistryPerDevice": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "appSettings_batteryChemistryConnectFirst": "Connetti a un dispositivo per scegliere",
+  "appSettings_batteryNmc": "18650 NMC (3,0-4,2V)",
+  "appSettings_batteryLifepo4": "LiFePO4 (2,6-3,65V)",
+  "appSettings_batteryLipo": "LiPo (3,0-4,2V)",
+  "appSettings_mapDisplay": "Visualizzazione Mappa",
+  "appSettings_showRepeaters": "Mostra Ripetitori",
+  "appSettings_showRepeatersSubtitle": "Mostra i nodi ripetitori sulla mappa",
+  "appSettings_showChatNodes": "Mostra Nodi Chat",
+  "appSettings_showChatNodesSubtitle": "Mostra i nodi di chat sulla mappa",
+  "appSettings_showOtherNodes": "Mostra altri nodi",
+  "appSettings_showOtherNodesSubtitle": "Mostra altri tipi di nodo sulla mappa",
+  "appSettings_timeFilter": "Filtro Temporale",
+  "appSettings_timeFilterShowAll": "Mostra tutti i nodi",
+  "appSettings_timeFilterShowLast": "Mostra i nodi delle ultime {hours} ore",
+  "@appSettings_timeFilterShowLast": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "appSettings_mapTimeFilter": "Filtro Tempo Mappa",
+  "appSettings_showNodesDiscoveredWithin": "Mostra i nodi scoperti all'interno di:",
+  "appSettings_allTime": "Tutto il tempo",
+  "appSettings_lastHour": "Ultima ora",
+  "appSettings_last6Hours": "Ultimi 6 ore",
+  "appSettings_last24Hours": "Ultime 24 ore",
+  "appSettings_lastWeek": "La settimana scorsa",
+  "appSettings_offlineMapCache": "Cache Mappa Offline",
+  "appSettings_noAreaSelected": "Nessun'area selezionata",
+  "appSettings_areaSelectedZoom": "Area selezionata (zoom {minZoom}-{maxZoom})",
+  "@appSettings_areaSelectedZoom": {
+    "placeholders": {
+      "minZoom": {
+        "type": "int"
+      },
+      "maxZoom": {
+        "type": "int"
+      }
+    }
+  },
+  "appSettings_debugCard": "Risoluzione dei problemi",
+  "appSettings_appDebugLogging": "Registrazione Debug App",
+  "appSettings_appDebugLoggingSubtitle": "Messaggi di debug dell'app Log per la risoluzione dei problemi",
+  "appSettings_appDebugLoggingEnabled": "Logging di debug dell'app abilitato",
+  "appSettings_appDebugLoggingDisabled": "Logging del debug dell'app disabilitato",
+  "contacts_title": "Contatti",
+  "contacts_noContacts": "Nessun contatto ancora",
+  "contacts_contactsWillAppear": "I contatti appariranno quando i dispositivi pubblicizzano.",
+  "contacts_searchContacts": "Cerca contatti...",
+  "contacts_noUnreadContacts": "Nessun contatto non letto",
+  "contacts_noContactsFound": "Nessun contatto o gruppo trovato.",
+  "contacts_deleteContact": "Elimina Contatto",
+  "contacts_removeConfirm": "Eliminare {contactName} dai contatti?",
+  "@contacts_removeConfirm": {
+    "placeholders": {
+      "contactName": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_manageRepeater": "Gestisci Ripetitore",
+  "contacts_roomLogin": "Login Camera",
+  "contacts_openChat": "Apri Chat",
+  "contacts_editGroup": "Modifica Gruppo",
+  "contacts_deleteGroup": "Elimina Gruppo",
+  "contacts_deleteGroupConfirm": "Eliminare \"{groupName}\"?",
+  "@contacts_deleteGroupConfirm": {
+    "placeholders": {
+      "groupName": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_newGroup": "Nuovo Gruppo",
+  "contacts_groupName": "Nome gruppo",
+  "contacts_groupNameRequired": "Il nome del gruppo è obbligatorio.",
+  "contacts_groupAlreadyExists": "Il gruppo \"{name}\" esiste già.",
+  "@contacts_groupAlreadyExists": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contacts_filterContacts": "Filtra i contatti...",
+  "contacts_noContactsMatchFilter": "Nessun contatto corrisponde al tuo filtro",
+  "contacts_noMembers": "Nessun membro",
+  "contacts_lastSeenNow": "Ultimo avvistamento ora",
+  "contacts_lastSeenMinsAgo": "Ultimo visto {minutes} minuti fa",
+  "@contacts_lastSeenMinsAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "contacts_lastSeenHourAgo": "Ultimo visto 1 ora fa",
+  "contacts_lastSeenHoursAgo": "Ultimo visto {hours} ore fa",
+  "@contacts_lastSeenHoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "contacts_lastSeenDayAgo": "Ultimo visto 1 giorno fa",
+  "contacts_lastSeenDaysAgo": "Ultimo visto {days} giorni fa",
+  "@contacts_lastSeenDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_title": "Canali",
+  "channels_noChannelsConfigured": "Nessun canale configurato",
+  "channels_addPublicChannel": "Aggiungi Canale Pubblico",
+  "channels_searchChannels": "Cerca canali...",
+  "channels_noChannelsFound": "Nessun canale trovato",
+  "channels_channelIndex": "Canale {index}",
+  "@channels_channelIndex": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_hashtagChannel": "Canale hashtag",
+  "channels_public": "Pubblico",
+  "channels_private": "Privato",
+  "channels_publicChannel": "Canale pubblico",
+  "channels_privateChannel": "Canale privato",
+  "channels_editChannel": "Modifica canale",
+  "channels_muteChannel": "Silenzia canale",
+  "channels_unmuteChannel": "Attiva notifiche canale",
+  "channels_deleteChannel": "Elimina canale",
+  "channels_deleteChannelConfirm": "Eliminare \"{name}\"? Non può essere annullato.",
+  "@channels_deleteChannelConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_channelDeleted": "Canale \"{name}\" eliminato",
+  "@channels_channelDeleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_addChannel": "Aggiungi Canale",
+  "channels_channelIndexLabel": "Indice Canale",
+  "channels_channelName": "Nome canale",
+  "channels_usePublicChannel": "Utilizza il canale pubblico",
+  "channels_standardPublicPsk": "PSK pubblico standard",
+  "channels_pskHex": "PSK (Hex)",
+  "channels_generateRandomPsk": "Genera una chiave di permutazione casuale",
+  "channels_enterChannelName": "Inserisci un nome per il canale",
+  "channels_pskMustBe32Hex": "PSK deve essere composto da 32 caratteri esadecimali.",
+  "channels_channelAdded": "Canale \"{name}\" aggiunto",
+  "@channels_channelAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_editChannelTitle": "Modifica Canale {index}",
+  "@channels_editChannelTitle": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channels_smazCompression": "Compressione SMAZ",
+  "channels_channelUpdated": "Canale \"{name}\" aggiornato",
+  "@channels_channelUpdated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "channels_publicChannelAdded": "Canale pubblico aggiunto",
+  "channels_sortBy": "Ordina per",
+  "channels_sortManual": "Manuale",
+  "channels_sortAZ": "A-Z",
+  "channels_sortLatestMessages": "Ultimi messaggi",
+  "channels_sortUnread": "Non letto",
+  "chat_noMessages": "Nessun messaggio ancora",
+  "chat_sendMessageToStart": "Invia un messaggio per iniziare",
+  "chat_originalMessageNotFound": "Messaggio originale non trovato",
+  "chat_replyingTo": "Rispondere a {name}",
+  "@chat_replyingTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_replyTo": "Rispondi a {name}",
+  "@chat_replyTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_location": "Posizione",
+  "chat_sendMessageTo": "Invia un messaggio a {contactName}",
+  "@chat_sendMessageTo": {
+    "placeholders": {
+      "contactName": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_typeMessage": "Digita un messaggio...",
+  "chat_messageTooLong": "Messaggio troppo lungo (massimo {maxBytes} byte).",
+  "@chat_messageTooLong": {
+    "placeholders": {
+      "maxBytes": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_messageCopied": "Messaggio copiato",
+  "chat_messageDeleted": "Messaggio eliminato",
+  "chat_retryingMessage": "Riprovo",
+  "chat_retryCount": "Riprova {current}/{max}",
+  "@chat_retryCount": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_sendGif": "Invia GIF",
+  "chat_reply": "Rispondi",
+  "chat_addReaction": "Aggiungi Reazione",
+  "chat_me": "Me",
+  "emojiCategorySmileys": "Emoji",
+  "emojiCategoryGestures": "Gesti",
+  "emojiCategoryHearts": "Cuori",
+  "emojiCategoryObjects": "Oggetti",
+  "gifPicker_title": "Scegli un GIF",
+  "gifPicker_searchHint": "Cerca GIF...",
+  "gifPicker_poweredBy": "Potenziato da GIPHY",
+  "gifPicker_noGifsFound": "Nessun GIF trovato",
+  "gifPicker_failedLoad": "Impossibile caricare i GIF",
+  "gifPicker_failedSearch": "Impossibile trovare GIF",
+  "gifPicker_noInternet": "Nessuna connessione internet",
+  "debugLog_appTitle": "Log di Debug dell'App",
+  "debugLog_bleTitle": "Log di Debug BLE",
+  "debugLog_copyLog": "Copia log",
+  "debugLog_clearLog": "Cancella log",
+  "debugLog_copied": "Log di debug copiato",
+  "debugLog_bleCopied": "Log BLE copiato",
+  "debugLog_noEntries": "Non ci sono ancora log di debug.",
+  "debugLog_enableInSettings": "Abilita il logging di debug dell'app nelle impostazioni",
+  "debugLog_frames": "Frame",
+  "debugLog_rawLogRx": "Log Raw-RX",
+  "debugLog_noBleActivity": "Nessuna attività BLE rilevata ancora.",
+  "debugFrame_length": "Lunghezza del Frame: {count} byte",
+  "@debugFrame_length": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "debugFrame_command": "Comando: 0x{value}",
+  "@debugFrame_command": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textMessageHeader": "Messaggio di testo:",
+  "debugFrame_destinationPubKey": "- Destinazione PubChiave: {pubKey}",
+  "@debugFrame_destinationPubKey": {
+    "placeholders": {
+      "pubKey": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_timestamp": "- Timestamp: {timestamp}",
+  "@debugFrame_timestamp": {
+    "placeholders": {
+      "timestamp": {
+        "type": "int"
+      }
+    }
+  },
+  "debugFrame_flags": "- Flag: 0x{value}",
+  "@debugFrame_flags": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textType": "Tipo di testo: {type} ({label})",
+  "@debugFrame_textType": {
+    "placeholders": {
+      "type": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_textTypeCli": "CLI",
+  "debugFrame_textTypePlain": "Semplice",
+  "debugFrame_text": "- Testo: \"{text}\"",
+  "@debugFrame_text": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "debugFrame_hexDump": "Dumpa Esadecimale:",
+  "chat_pathManagement": "Gestione Percorsi",
+  "chat_routingMode": "Modalità di routing",
+  "chat_autoUseSavedPath": "Utilizza il percorso salvato",
+  "chat_forceFloodMode": "Modalità Inondamento Forzato",
+  "chat_recentAckPaths": "Percorsi ACK Recenti (tocca per usare):",
+  "chat_pathHistoryFull": "La cronologia del percorso è piena. Rimuovi gli elementi per aggiungere nuovi.",
+  "chat_hopSingular": "salta",
+  "chat_hopPlural": "salta",
+  "chat_hopsCount": "{count} {count, plural, =1{salto} other{salti}}",
+  "@chat_hopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_successes": "successi",
+  "chat_removePath": "Rimuovi percorso",
+  "chat_noPathHistoryYet": "Non c'è ancora una cronologia del percorso.\nInvia un messaggio per scoprire i percorsi.",
+  "chat_pathActions": "Azioni Percorso:",
+  "chat_setCustomPath": "Imposta Percorso Personalizzato",
+  "chat_setCustomPathSubtitle": "Specifica manualmente il percorso di routing",
+  "chat_clearPath": "Cancella Percorso",
+  "chat_clearPathSubtitle": "Riprova la scoperta alla prossima invio",
+  "chat_pathCleared": "Percorso sgomberato. Il prossimo messaggio riidentifierà il percorso.",
+  "chat_floodModeSubtitle": "Utilizza l'interruttore di routing nella barra delle applicazioni",
+  "chat_floodModeEnabled": "Modalità alluvione abilitata. Disattivala tramite l'icona di routing nella barra in alto.",
+  "chat_fullPath": "Percorso Completo",
+  "chat_pathDetailsNotAvailable": "I dettagli del percorso non sono ancora disponibili. Prova a inviare un messaggio per ricaricare.",
+  "chat_pathSetHops": "Percorso impostato: {hopCount} {hopCount, plural, =1{hop} other{hops}} - {status}",
+  "@chat_pathSetHops": {
+    "placeholders": {
+      "hopCount": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_pathSavedLocally": "Salvatato localmente. Connetti per sincronizzare.",
+  "chat_pathDeviceConfirmed": "Dispositivo confermato.",
+  "chat_pathDeviceNotConfirmed": "Dispositivo non confermato ancora.",
+  "chat_type": "Digita",
+  "chat_path": "Percorso",
+  "chat_publicKey": "Chiave Pubblica",
+  "chat_compressOutgoingMessages": "Comprimi messaggi in uscita",
+  "chat_floodForced": "Inondazione (forzata)",
+  "chat_directForced": "Riavvia (forzato)",
+  "chat_hopsForced": "{count} salti (forzati)",
+  "@chat_hopsForced": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_floodAuto": "Inondazione (auto)",
+  "chat_direct": "Salva",
+  "chat_poiShared": "Punti di Interesse Condivisi",
+  "chat_unread": "Non letti: {count}",
+  "@chat_unread": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chat_openLink": "Aprire il link?",
+  "chat_openLinkConfirmation": "Vuoi aprire questo link nel tuo browser?",
+  "chat_open": "Apri",
+  "chat_couldNotOpenLink": "Impossibile aprire il link: {url}",
+  "@chat_couldNotOpenLink": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "chat_invalidLink": "Formato di link non valido",
+  "map_title": "Mappa Nodi",
+  "map_noNodesWithLocation": "Nessun nodo con dati di posizione",
+  "map_nodesNeedGps": "I nodi devono condividere le loro coordinate GPS\nper apparire sulla mappa",
+  "map_nodesCount": "Nodi: {count}",
+  "@map_nodesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "map_pinsCount": "Puntatori: {count}",
+  "@map_pinsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "map_chat": "Chat",
+  "map_repeater": "Ripetitore",
+  "map_room": "Stanza",
+  "map_sensor": "Sensore",
+  "map_pinDm": "Codice PIN (DM)",
+  "map_pinPrivate": "Blocco (Privato)",
+  "map_pinPublic": "Pin (Pubblico)",
+  "map_lastSeen": "Ultimo visto",
+  "map_disconnectConfirm": "Sei sicuro di voler disconnetterti da questo dispositivo?",
+  "map_from": "Da",
+  "map_source": "Fonte",
+  "map_flags": "Bandiere",
+  "map_pinLabel": "Etichetta PIN",
+  "map_label": "Etichetta",
+  "map_publicLocationShare": "Condividi in una posizione pubblica",
+  "map_publicLocationShareConfirm": "Stai per condividere una posizione in {channelLabel}. Questo canale è pubblico e chiunque abbia la PSK può vederlo.",
+  "@map_publicLocationShareConfirm": {
+    "placeholders": {
+      "channelLabel": {
+        "type": "String"
+      }
+    }
+  },
+  "map_connectToShareMarkers": "Connetti a un dispositivo per condividere i segnaposti",
+  "map_filterNodes": "Filtra Nodi",
+  "map_nodeTypes": "Tipi di Nodo",
+  "map_chatNodes": "Nodi di Chat",
+  "map_repeaters": "Ripetitori",
+  "map_otherNodes": "Altri Nodi",
+  "map_keyPrefix": "Prefisso Chiave",
+  "map_filterByKeyPrefix": "Filtra per prefisso chiave",
+  "map_publicKeyPrefix": "Prefisso chiave pubblica",
+  "map_markers": "Segnaposto",
+  "map_showSharedMarkers": "Mostra i segnaposto condivisi",
+  "map_lastSeenTime": "Ultimo Tempo di Visualizzazione",
+  "map_joinRoom": "Unisciti alla stanza",
+  "map_manageRepeater": "Gestisci Ripetitore",
+  "mapCache_title": "Cache Mappa Offline",
+  "mapCache_selectAreaFirst": "Seleziona un'area da memorizzare nella cache per prima.",
+  "mapCache_noTilesToDownload": "Nessun tile da scaricare per questa area",
+  "mapCache_downloadTilesTitle": "Scarica mattoncini",
+  "mapCache_downloadTilesPrompt": "Scarica {count} tile per l'uso offline?",
+  "@mapCache_downloadTilesPrompt": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadAction": "Scarica",
+  "mapCache_cachedTiles": "Cacheggiate {count} tile",
+  "@mapCache_cachedTiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_cachedTilesWithFailed": "Tile memorizzati {downloaded} ({failed} falliti)",
+  "@mapCache_cachedTilesWithFailed": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_clearOfflineCacheTitle": "Cancella cache offline",
+  "mapCache_clearOfflineCachePrompt": "Eliminare tutte le tile di mappa memorizzate nella cache?",
+  "mapCache_offlineCacheCleared": "Cache offline eliminata",
+  "mapCache_noAreaSelected": "Nessun'area selezionata",
+  "mapCache_cacheArea": "Area Cache",
+  "mapCache_useCurrentView": "Utilizza la visualizzazione corrente",
+  "mapCache_zoomRange": "Intervallo Zoom",
+  "mapCache_estimatedTiles": "Stima dei mattoni: {count}",
+  "@mapCache_estimatedTiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadedTiles": "Scaricati {completed} / {total}",
+  "@mapCache_downloadedTiles": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_downloadTilesButton": "Scarica Tessere",
+  "mapCache_clearCacheButton": "Svuota Cache",
+  "mapCache_failedDownloads": "Download falliti: {count}",
+  "@mapCache_failedDownloads": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapCache_boundsLabel": "N {north}, S {south}, E {east}, W {west}",
+  "@mapCache_boundsLabel": {
+    "placeholders": {
+      "north": {
+        "type": "String"
+      },
+      "south": {
+        "type": "String"
+      },
+      "east": {
+        "type": "String"
+      },
+      "west": {
+        "type": "String"
+      }
+    }
+  },
+  "time_justNow": "Proprio ora",
+  "time_minutesAgo": "{minutes} minuti fa",
+  "@time_minutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "time_hoursAgo": "{hours}h fa",
+  "@time_hoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "time_daysAgo": "{days} giorni fa",
+  "@time_daysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "time_hour": "ora",
+  "time_hours": "ore",
+  "time_day": "giorno",
+  "time_days": "giorni",
+  "time_week": "settimana",
+  "time_weeks": "settimane",
+  "time_month": "mese",
+  "time_months": "mesi",
+  "time_minutes": "minuti",
+  "time_allTime": "Tutto il Tempo",
+  "dialog_disconnect": "Disconnetti",
+  "dialog_disconnectConfirm": "Sei sicuro di voler disconnetterti da questo dispositivo?",
+  "login_repeaterLogin": "Login Ripetitore",
+  "login_roomLogin": "Login Camera",
+  "login_password": "Password",
+  "login_enterPassword": "Inserisci password",
+  "login_savePassword": "Salva password",
+  "login_savePasswordSubtitle": "La password verrà memorizzata in modo sicuro su questo dispositivo.",
+  "login_repeaterDescription": "Inserisci la password del ripetitore per accedere alle impostazioni e allo stato.",
+  "login_roomDescription": "Inserisci la password della stanza per accedere alle impostazioni e allo stato.",
+  "login_routing": "Instradamento",
+  "login_routingMode": "Modalità di routing",
+  "login_autoUseSavedPath": "Utilizza il percorso salvato",
+  "login_forceFloodMode": "Modalità Inondamento Forzato",
+  "login_managePaths": "Gestisci Percorsi",
+  "login_login": "Accedi",
+  "login_attempt": "Prova {current}/{max}",
+  "@login_attempt": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "login_failed": "Accesso fallito: {error}",
+  "@login_failed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "login_failedMessage": "Accesso fallito. La password non è corretta oppure il ripetitore non è raggiungibile.",
+  "common_reload": "Ricaricare",
+  "common_clear": "Cancella",
+  "path_currentPath": "Percorso corrente: {path}",
+  "@path_currentPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "path_usingHopsPath": "Utilizzare {count} {count, plural, =1{hop} other{hops}} percorso",
+  "@path_usingHopsPath": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "path_enterCustomPath": "Inserisci percorso personalizzato",
+  "path_currentPathLabel": "Percorso corrente",
+  "path_hexPrefixInstructions": "Inserire i prefissi esadecimali a 2 caratteri per ogni salto, separati da virgole.",
+  "path_hexPrefixExample": "Esempio: A1,F2,3C (ogni nodo utilizza il primo byte della sua chiave pubblica)",
+  "path_labelHexPrefixes": "Prefisso esadecimale (percorso)",
+  "path_helperMaxHops": "Massimo 64 salti. Ogni prefisso è composto da 2 caratteri esadecimali (1 byte)",
+  "path_selectFromContacts": "Seleziona da contatti:",
+  "path_noRepeatersFound": "Non sono stati trovati ripetitori o server di stanza.",
+  "path_customPathsRequire": "I percorsi personalizzati richiedono salti intermedi che possono inoltrare messaggi.",
+  "path_invalidHexPrefixes": "Prefissi esadecimali non validi: {prefixes}",
+  "@path_invalidHexPrefixes": {
+    "placeholders": {
+      "prefixes": {
+        "type": "String"
+      }
+    }
+  },
+  "path_tooLong": "Il percorso è troppo lungo. Massimo 64 salti consentiti.",
+  "path_setPath": "Imposta Percorso",
+  "repeater_management": "Gestione Ripetitori",
+  "repeater_managementTools": "Strumenti di Gestione",
+  "repeater_status": "Stato",
+  "repeater_statusSubtitle": "Visualizza lo stato, le statistiche e i vicini del ripetitore",
+  "repeater_telemetry": "Telemetry",
+  "repeater_telemetrySubtitle": "Visualizza i dati di telemetria dei sensori e le statistiche di sistema",
+  "repeater_cli": "CLI",
+  "repeater_cliSubtitle": "Invia comandi al ripetitore",
+  "repeater_settings": "Impostazioni",
+  "repeater_settingsSubtitle": "Configura i parametri del ripetitore",
+  "repeater_statusTitle": "Stato del Ripetitore",
+  "repeater_routingMode": "Modalità di routing",
+  "repeater_autoUseSavedPath": "Percorso salvato automatico",
+  "repeater_forceFloodMode": "Modalità Inondamento Forzato",
+  "repeater_pathManagement": "Gestione dei percorsi",
+  "repeater_refresh": "Aggiorna",
+  "repeater_statusRequestTimeout": "Richiesta stato scaduta.",
+  "repeater_errorLoadingStatus": "Errore nel caricamento dello stato: {error}",
+  "@repeater_errorLoadingStatus": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_systemInformation": "Informazioni di sistema",
+  "repeater_battery": "Batteria",
+  "repeater_clockAtLogin": "Orologio (all'accesso)",
+  "repeater_uptime": "Disponibilità",
+  "repeater_queueLength": "Lunghezza della coda",
+  "repeater_debugFlags": "Impostazioni Debug",
+  "repeater_radioStatistics": "Statistiche Radio",
+  "repeater_lastRssi": "Ultimo RSSI",
+  "repeater_lastSnr": "Ultimo SNR",
+  "repeater_noiseFloor": "Livello del Rumore",
+  "repeater_txAirtime": "TX Airtime",
+  "repeater_rxAirtime": "RX Airtime",
+  "repeater_packetStatistics": "Statistiche del Pacchetto",
+  "repeater_sent": "Inviato",
+  "repeater_received": "Ricevuto",
+  "repeater_duplicates": "Duplicati",
+  "repeater_daysHoursMinsSecs": "{days} giorni {hours}h {minutes}m {seconds}s",
+  "@repeater_daysHoursMinsSecs": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_packetTxTotal": "Totale: {total}, Inondazione: {flood}, Diretto: {direct}",
+  "@repeater_packetTxTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_packetRxTotal": "Totale: {total}, Inondazione: {flood}, Diretto: {direct}",
+  "@repeater_packetRxTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_duplicatesFloodDirect": "Inondazione: {flood}, Diretto: {direct}",
+  "@repeater_duplicatesFloodDirect": {
+    "placeholders": {
+      "flood": {
+        "type": "String"
+      },
+      "direct": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_duplicatesTotal": "Totale: {total}",
+  "@repeater_duplicatesTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_settingsTitle": "Impostazioni Ripetitore",
+  "repeater_basicSettings": "Impostazioni di Base",
+  "repeater_repeaterName": "Nome Ripetitore",
+  "repeater_repeaterNameHelper": "Visualizza il nome di questo ripetitore",
+  "repeater_adminPassword": "Password Amministratore",
+  "repeater_adminPasswordHelper": "Accesso completo password",
+  "repeater_guestPassword": "Password Ospite",
+  "repeater_guestPasswordHelper": "Accesso in sola lettura con password",
+  "repeater_radioSettings": "Impostazioni Radio",
+  "repeater_frequencyMhz": "Frequenza (MHz)",
+  "repeater_frequencyHelper": "300-2500 MHz",
+  "repeater_txPower": "TX Potenza",
+  "repeater_txPowerHelper": "1-30 dBm",
+  "repeater_bandwidth": "Larghezza di banda",
+  "repeater_spreadingFactor": "Spreading Factor",
+  "repeater_codingRate": "Tasso di Codifica",
+  "repeater_locationSettings": "Impostazioni Luogo",
+  "repeater_latitude": "Latitudine",
+  "repeater_latitudeHelper": "Grado decimale (ad esempio, 37.7749)",
+  "repeater_longitude": "Longitudine",
+  "repeater_longitudeHelper": "Grado decimale (ad esempio, -122,4194)",
+  "repeater_features": "Caratteristiche",
+  "repeater_packetForwarding": "Instradamento Pacchetti",
+  "repeater_packetForwardingSubtitle": "Abilita il ripetitore per inoltrare i pacchetti",
+  "repeater_guestAccess": "Accesso Ospite",
+  "repeater_guestAccessSubtitle": "Consenti l'accesso ospite in sola lettura",
+  "repeater_privacyMode": "Modalità Privacy",
+  "repeater_privacyModeSubtitle": "Nascondere nome/luogo negli annunci",
+  "repeater_advertisementSettings": "Impostazioni Annuncio",
+  "repeater_localAdvertInterval": "Intervallo Pubblicità Locale",
+  "repeater_localAdvertIntervalMinutes": "{minutes} minuti",
+  "@repeater_localAdvertIntervalMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_floodAdvertInterval": "Intervallo Pubblicità Inondazione",
+  "repeater_floodAdvertIntervalHours": "{hours} ore",
+  "@repeater_floodAdvertIntervalHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "repeater_encryptedAdvertInterval": "Intervallo Pubblicitario Crittografato",
+  "repeater_dangerZone": "Zona Pericolosa",
+  "repeater_rebootRepeater": "Riavvia Ripetitore",
+  "repeater_rebootRepeaterSubtitle": "Riavvia il dispositivo ripetitore",
+  "repeater_rebootRepeaterConfirm": "Sei sicuro di voler riavviare questo ripetitore?",
+  "repeater_regenerateIdentityKey": "Rigenera Chiave Identità",
+  "repeater_regenerateIdentityKeySubtitle": "Genera una nuova coppia di chiavi pubblica/privata",
+  "repeater_regenerateIdentityKeyConfirm": "Questo genererà una nuova identità per il ripetitore. Procedere?",
+  "repeater_eraseFileSystem": "Elimina File System",
+  "repeater_eraseFileSystemSubtitle": "Formatta il file system del ripetitore",
+  "repeater_eraseFileSystemConfirm": "ATTENZIONE: Ciò cancellerà tutti i dati sul ripetitore. Non può essere annullato!",
+  "repeater_eraseSerialOnly": "Elimina è disponibile solo tramite console seriale.",
+  "repeater_commandSent": "Comando inviato: {command}",
+  "@repeater_commandSent": {
+    "placeholders": {
+      "command": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_errorSendingCommand": "Errore nell'invio del comando: {error}",
+  "@repeater_errorSendingCommand": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_confirm": "Conferma",
+  "repeater_settingsSaved": "Impostazioni salvate con successo",
+  "repeater_errorSavingSettings": "Errore durante il salvataggio delle impostazioni: {error}",
+  "@repeater_errorSavingSettings": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_refreshBasicSettings": "Aggiorna Impostazioni Base",
+  "repeater_refreshRadioSettings": "Aggiorna le Impostazioni Radio",
+  "repeater_refreshTxPower": "Aggiorna TX potenza",
+  "repeater_refreshLocationSettings": "Aggiorna le Impostazioni della Posizione",
+  "repeater_refreshPacketForwarding": "Aggiorna il inoltro pacchetti",
+  "repeater_refreshGuestAccess": "Aggiorna Accesso Ospite",
+  "repeater_refreshPrivacyMode": "Aggiorna Modalità Privacy",
+  "repeater_refreshAdvertisementSettings": "Aggiorna le Impostazioni dell'Annuncio",
+  "repeater_refreshed": "{label} aggiornato",
+  "@repeater_refreshed": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_errorRefreshing": "Errore durante il ricaricamento di {label}",
+  "@repeater_errorRefreshing": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_cliTitle": "Riprova CLI",
+  "repeater_debugNextCommand": "Riavvia Comando Prossimo",
+  "repeater_commandHelp": "Aiuto",
+  "repeater_clearHistory": "Cancella Cronologia",
+  "repeater_noCommandsSent": "Nessun comando inviato ancora",
+  "repeater_typeCommandOrUseQuick": "Digita un comando qui sotto o usa comandi rapidi",
+  "repeater_enterCommandHint": "Inserisci comando...",
+  "repeater_previousCommand": "Comando precedente",
+  "repeater_nextCommand": "Prossimo comando",
+  "repeater_enterCommandFirst": "Inserisci un comando prima",
+  "repeater_cliCommandFrameTitle": "Finestra Comando CLI",
+  "repeater_cliCommandError": "Errore: {error}",
+  "@repeater_cliCommandError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_cliQuickGetName": "Ottieni Nome",
+  "repeater_cliQuickGetRadio": "Ottieni Radio",
+  "repeater_cliQuickGetTx": "Ottieni TX",
+  "repeater_cliQuickNeighbors": "Vicini",
+  "repeater_cliQuickVersion": "Versione",
+  "repeater_cliQuickAdvertise": "Pubblicare",
+  "repeater_cliQuickClock": "Orologio",
+  "repeater_cliHelpAdvert": "Invia un pacchetto pubblicitario",
+  "repeater_cliHelpReboot": "Riavvia il dispositivo. (nota, potresti ottenere 'Timeout' che è normale)",
+  "repeater_cliHelpClock": "Mostra l'ora corrente per l'orologio di ciascun dispositivo.",
+  "repeater_cliHelpPassword": "Imposta una nuova password di amministratore per il dispositivo.",
+  "repeater_cliHelpVersion": "Mostra la versione del dispositivo e la data di costruzione del firmware.",
+  "repeater_cliHelpClearStats": "Resetta vari numerosi contatori di statistiche a zero.",
+  "repeater_cliHelpSetAf": "Imposta il fattore di tempo di trasmissione.",
+  "repeater_cliHelpSetTx": "Imposta la potenza di trasmissione LoRa in dBm (riavvia per applicare).",
+  "repeater_cliHelpSetRepeat": "Abilita o disabilita il ruolo del ripetitore per questo nodo.",
+  "repeater_cliHelpSetAllowReadOnly": "(Server della stanza) Se 'on', allora l'accesso con una password vuota sarà consentito, ma non sarà possibile pubblicare nella stanza. (solo lettura).",
+  "repeater_cliHelpSetFloodMax": "Imposta il numero massimo di salti per i pacchetti di inondazione in entrata (se >= max, il pacchetto non viene inoltrato)",
+  "repeater_cliHelpSetIntThresh": "Imposta il Limite di Interferenza (in dB). Il valore predefinito è 14. Imposta su 0 per disabilitare il rilevamento delle interferenze del canale.",
+  "repeater_cliHelpSetAgcResetInterval": "Imposta l'intervallo per resettare il controllore Automatico del Guadagno. Imposta su 0 per disabilitare.",
+  "repeater_cliHelpSetMultiAcks": "Abilita o disabilita la funzione 'double ACKs'.",
+  "repeater_cliHelpSetAdvertInterval": "Imposta l'intervallo del timer in minuti per inviare un pacchetto di pubblicità locale (senza salto). Imposta su 0 per disabilitare.",
+  "repeater_cliHelpSetFloodAdvertInterval": "Imposta l'intervallo del timer in ore per inviare un pacchetto pubblicitario di massa. Imposta su 0 per disabilitare.",
+  "repeater_cliHelpSetGuestPassword": "Imposta/aggiorna la password dell'ospite. (per ripetitori, gli accessi degli ospiti possono inviare la richiesta \"Get Stats\")",
+  "repeater_cliHelpSetName": "Imposta il nome dell'annuncio.",
+  "repeater_cliHelpSetLat": "Imposta la latitudine della mappa pubblicitaria. (gradi decimali)",
+  "repeater_cliHelpSetLon": "Imposta la longitudine della mappa pubblicitaria. (gradi decimali)",
+  "repeater_cliHelpSetRadio": "Imposta completamente nuovi parametri radio e li salva nelle preferenze. Richiede un comando \"reboot\" per l'applicazione.",
+  "repeater_cliHelpSetRxDelay": "Impostazioni (experimental) base (deve essere > 1 per l'effetto) per applicare un leggero ritardo ai pacchetti ricevuti, in base alla forza del segnale/punteggio. Imposta a 0 per disabilitare.",
+  "repeater_cliHelpSetTxDelay": "Imposta un fattore moltiplicato con il tempo di mantenimento per un pacchetto di modalità allagamento e con un sistema di slot casuale, per ritardarne la trasmissione (per diminuire la probabilità di collisioni).",
+  "repeater_cliHelpSetDirectTxDelay": "Uguale a txdelay, ma per applicare un ritardo casuale alla inoltrata di pacchetti in modalità diretta.",
+  "repeater_cliHelpSetBridgeEnabled": "Abilita/Disabilita ponte.",
+  "repeater_cliHelpSetBridgeDelay": "Imposta il ritardo prima di ritrasmettere i pacchetti.",
+  "repeater_cliHelpSetBridgeSource": "Scegliere se il ponte dovrà ritrasmettere i pacchetti ricevuti o i pacchetti trasmessi.",
+  "repeater_cliHelpSetBridgeBaud": "Imposta la velocità di trasmissione per i ponti rs232.",
+  "repeater_cliHelpSetBridgeSecret": "Imposta il segreto per i ponti espnow.",
+  "repeater_cliHelpSetAdcMultiplier": "Imposta un fattore personalizzato per regolare la tensione della batteria riportata (supportato solo su schede selezionate).",
+  "repeater_cliHelpTempRadio": "Imposta parametri radio temporanei per il numero specificato di minuti, per poi tornare ai parametri radio originali. (non salva nelle preferenze).",
+  "repeater_cliHelpSetPerm": "Modifica l'ACL. Rimuove l'entrata corrispondente (per prefisso di pubkey) se \"permissions\" è zero. Aggiunge una nuova entrata se il pubkey-hex ha lunghezza completa e non è attualmente nell'ACL. Aggiorna l'entrata per corrispondenza del prefisso di pubkey. I bit di permesso variano per ogni ruolo di firmware, ma i primi 2 bit sono: 0 (Guest), 1 (solo lettura), 2 (lettura/scrittura), 3 (Admin)",
+  "repeater_cliHelpGetBridgeType": "Ottiene tipo ponte nessuno, rs232, espnow",
+  "repeater_cliHelpLogStart": "Avvia registrazione pacchetti nel file system.",
+  "repeater_cliHelpLogStop": "Interrompi la registrazione dei pacchetti al file system.",
+  "repeater_cliHelpLogErase": "Elimina i log del pacchetto dal file system.",
+  "repeater_cliHelpNeighbors": "Mostra un elenco di altri nodi repeater ricevuti tramite annunci zero-hop. Ogni riga è id-prefisso-esadecimale:timestamp:snr-volte-4",
+  "repeater_cliHelpNeighborRemove": "Rimuove la prima corrispondenza in base al prefisso (esadecimale) della pubkey, dalla lista dei vicini.",
+  "repeater_cliHelpRegion": "(solo serie) Elenca tutte le regioni definite e le autorizzazioni di allagamento correnti.",
+  "repeater_cliHelpRegionLoad": "NOTA: questo è un'invocazione multi-comando speciale. Ogni comando successivo è un nome di regione (indentato con spazi per indicare la gerarchia parentale, con almeno uno spazio). Terminata inviando una riga vuota/comando.",
+  "repeater_cliHelpRegionGet": "Cerca la regione con il prefisso del nome dato (o \"\" per l'ambito globale). Risponde con \"-> nome-regione (nome-genitore) 'F'\"",
+  "repeater_cliHelpRegionPut": "Aggiunge o aggiorna una definizione di regione con il nome specificato.",
+  "repeater_cliHelpRegionRemove": "Rimuove una definizione di regione con il dato nome. (deve corrispondere esattamente e non avere regioni figlio)",
+  "repeater_cliHelpRegionAllowf": "Imposta il permesso di 'F'lood per la regione specificata. ('' per lo scope globale/legacy)",
+  "repeater_cliHelpRegionDenyf": "Rimuove il permesso 'F'lood per la regione specificata. (NOTA: a questo stadio non è consigliato utilizzarlo sullo scope globale/legacy!!).",
+  "repeater_cliHelpRegionHome": "Risposte con la regione 'home' corrente. (Nota applicata finora, riservata per il futuro)",
+  "repeater_cliHelpRegionHomeSet": "Imposta la regione 'home'.",
+  "repeater_cliHelpRegionSave": "Persiste l'elenco/mappa delle regioni all'archiviazione.",
+  "repeater_cliHelpGps": "Mostra lo stato del GPS. Quando il GPS è spento, risponde solo \"spento\", se è acceso risponde con \"acceso\", \"stato\", \"fix\" e numero di satelliti.",
+  "repeater_cliHelpGpsOnOff": "Attiva/disattiva l'alimentazione del GPS.",
+  "repeater_cliHelpGpsSync": "Sincronizza l'orario del nodo con l'orologio GPS.",
+  "repeater_cliHelpGpsSetLoc": "Imposta la posizione del nodo alle coordinate GPS e salva le preferenze.",
+  "repeater_cliHelpGpsAdvert": "Fornisce la configurazione dell'annuncio per il nodo:\n- nessuno: non includere la posizione negli annunci\n- condividi: condividi la posizione GPS (dal SensorManager)\n- preferenze: annuncia la posizione memorizzata nelle preferenze",
+  "repeater_cliHelpGpsAdvertSet": "Imposta la configurazione dell'annuncio sulla posizione.",
+  "repeater_commandsListTitle": "Elenco Comandi",
+  "repeater_commandsListNote": "NOTA: per i vari comandi \"set...\", esiste anche un comando \"get...\".",
+  "repeater_general": "Generale",
+  "repeater_settingsCategory": "Impostazioni",
+  "repeater_bridge": "Ponte",
+  "repeater_logging": "Registrazione",
+  "repeater_neighborsRepeaterOnly": "Vicini (solo ripetitore)",
+  "repeater_regionManagementRepeaterOnly": "Gestione Regione (solo Ripetitore)",
+  "repeater_regionNote": "Sono state introdotte le comandi di regione per gestire le definizioni e le autorizzazioni delle regioni.",
+  "repeater_gpsManagement": "Gestione GPS",
+  "repeater_gpsNote": "è stata introdotta una funzione gps per gestire le tematiche relative alla posizione.",
+  "telemetry_receivedData": "Dati Telemetria Ricevuti",
+  "telemetry_requestTimeout": "Richiesta di telemetria scaduta.",
+  "telemetry_errorLoading": "Errore nel caricamento della telemetria: {error}",
+  "@telemetry_errorLoading": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_noData": "Nessun dato di telemetria disponibile.",
+  "telemetry_channelTitle": "Canale {channel}",
+  "@telemetry_channelTitle": {
+    "placeholders": {
+      "channel": {
+        "type": "int"
+      }
+    }
+  },
+  "telemetry_batteryLabel": "Batteria",
+  "telemetry_voltageLabel": "Tensione",
+  "telemetry_mcuTemperatureLabel": "Temperatura MCU",
+  "telemetry_temperatureLabel": "Temperatura",
+  "telemetry_currentLabel": "Attuale",
+  "telemetry_batteryValue": "{percent}% / {volts}V",
+  "@telemetry_batteryValue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_voltageValue": "{volts}V",
+  "@telemetry_voltageValue": {
+    "placeholders": {
+      "volts": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_currentValue": "{amps}A",
+  "@telemetry_currentValue": {
+    "placeholders": {
+      "amps": {
+        "type": "String"
+      }
+    }
+  },
+  "telemetry_temperatureValue": "{celsius}°C / {fahrenheit}°F",
+  "@telemetry_temperatureValue": {
+    "placeholders": {
+      "celsius": {
+        "type": "String"
+      },
+      "fahrenheit": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_title": "Percorso Pacchetto",
+  "channelPath_viewMap": "Visualizza la mappa",
+  "channelPath_otherObservedPaths": "Altri Percorsi Osservati",
+  "channelPath_repeaterHops": "Passaggi Ripetitore",
+  "channelPath_noHopDetails": "I dettagli relativi a questo pacchetto non sono forniti.",
+  "channelPath_messageDetails": "Dettagli Messaggio",
+  "channelPath_senderLabel": "Mittente",
+  "channelPath_timeLabel": "Tempo",
+  "channelPath_repeatsLabel": "Ripeti",
+  "channelPath_pathLabel": "Percorso {index}",
+  "channelPath_observedLabel": "Osservato",
+  "channelPath_observedPathTitle": "Percorso osservato {index} • {hops}",
+  "@channelPath_observedPathTitle": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "hops": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_noLocationData": "Nessun dato di posizione",
+  "channelPath_timeWithDate": "{day}/{month} {time}",
+  "@channelPath_timeWithDate": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "month": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_timeOnly": "{time}",
+  "@channelPath_timeOnly": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_unknownPath": "Sconosciuto",
+  "channelPath_floodPath": "Inondazione",
+  "channelPath_directPath": "Salva",
+  "channelPath_observedZeroOf": "0 di {total} salti",
+  "@channelPath_observedZeroOf": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_observedSomeOf": "{observed} di {total} salti",
+  "@channelPath_observedSomeOf": {
+    "placeholders": {
+      "observed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_mapTitle": "Mappa del Percorso",
+  "channelPath_noRepeaterLocations": "Non sono disponibili posizioni per i ripetitori per questo percorso.",
+  "channelPath_primaryPath": "Percorso {index} (Primario)",
+  "@channelPath_primaryPath": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "@channelPath_pathLabel": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "channelPath_pathLabelTitle": "Percorso",
+  "channelPath_observedPathHeader": "Percorso Osservato",
+  "channelPath_selectedPathLabel": "{label} • {prefixes}",
+  "@channelPath_selectedPathLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "prefixes": {
+        "type": "String"
+      }
+    }
+  },
+  "channelPath_noHopDetailsAvailable": "Non sono disponibili i dettagli del salto per questo pacchetto.",
+  "channelPath_unknownRepeater": "Ripetitore sconosciuto",
+  "listFilter_tooltip": "Filtra e ordina",
+  "listFilter_sortBy": "Ordina per",
+  "listFilter_latestMessages": "Ultimi messaggi",
+  "listFilter_heardRecently": "Sentito di recente",
+  "listFilter_az": "A-Z",
+  "listFilter_filters": "Filtri",
+  "listFilter_all": "Tutti",
+  "listFilter_users": "Utenti",
+  "listFilter_repeaters": "Ripetitori",
+  "listFilter_roomServers": "Server della stanza",
+  "listFilter_unreadOnly": "Solo non letto",
+  "listFilter_newGroup": "Nuovo gruppo",
+  "@neighbors_errorLoading": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "repeater_neighbors": "Vicini",
+  "repeater_neighborsSubtitle": "Visualizza vicini di salto pari a zero.",
+  "neighbors_receivedData": "Ricevute dati vicini",
+  "neighbors_requestTimedOut": "I vicini richiedono un timeout.",
+  "neighbors_errorLoading": "Errore nel caricamento dei vicini: {error}",
+  "neighbors_repeatersNeighbors": "Ripetitori Vicini",
+  "neighbors_noData": "Nessun dato sugli vicini disponibile.",
+  "channels_createPrivateChannel": "Crea un Canale Privato",
+  "channels_createPrivateChannelDesc": "Protetta con una chiave segreta.",
+  "channels_joinPrivateChannel": "Unisciti a un Canale Privato",
+  "channels_joinPrivateChannelDesc": "Inserire manualmente una chiave segreta.",
+  "channels_joinPublicChannel": "Unisciti al Canale Pubblico",
+  "channels_joinPublicChannelDesc": "Chiunque può unirsi a questo canale.",
+  "channels_joinHashtagChannel": "Unisciti a un Canale con Hashtag",
+  "channels_joinHashtagChannelDesc": "Chiunque può unirsi ai canali hashtag.",
+  "channels_scanQrCode": "Scansiona un codice QR",
+  "channels_scanQrCodeComingSoon": "Arriverà presto",
+  "channels_enterHashtag": "Inserisci hashtag",
+  "channels_hashtagHint": "es. #team",
+  "@neighbors_unknownContact": {
+    "placeholders": {
+      "pubkey": {
+        "type": "String"
+      }
+    }
+  },
+  "@neighbors_heardAgo": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "neighbors_heardAgo": "Sentito: {time} fa",
+  "neighbors_unknownContact": "Chiave pubblica sconosciuta {pubkey}",
+  "settings_locationGPSEnable": "Abilita GPS",
+  "settings_locationGPSEnableSubtitle": "Abilita l'aggiornamento automatico della posizione tramite GPS.",
+  "settings_locationIntervalSec": "Intervallo GPS (Secondi)",
+  "settings_locationIntervalInvalid": "L'intervallo deve essere di almeno 60 secondi e inferiore a 86400 secondi.",
+  "contacts_manageRoom": "Gestisci Server Camera",
+  "room_management": "Gestione del Server di Camera",
+  "@community_joinConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_created": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_joined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_qrInstructions": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_alreadyMemberMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_deleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_deleted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_forCommunity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "common_ok": "OK",
+  "community_title": "Comunità",
+  "community_create": "Crea Comunità",
+  "community_createDesc": "Crea una nuova comunità e condividila tramite codice QR.",
+  "community_join": "Unisciti",
+  "community_joinTitle": "Unisciti alla Community",
+  "community_joinConfirmation": "Vuoi unirti alla community \"{name}\"?",
+  "community_scanQr": "Scansiona il QR Code della Community",
+  "community_scanInstructions": "Punta la fotocamera su un codice QR della comunità",
+  "community_showQr": "Mostra il codice QR",
+  "community_publicChannel": "Comunità Pubblica",
+  "community_hashtagChannel": "Hashtag della Comunità",
+  "community_name": "Nome della Comunità",
+  "community_enterName": "Inserisci il nome della comunità",
+  "community_created": "Comunità \"{name}\" creata",
+  "community_joined": "Unito alla comunità \"{name}\"",
+  "community_qrTitle": "Condividi Comunità",
+  "community_qrInstructions": "Scansiona questo codice QR per unirti a {name}",
+  "community_hashtagPrivacyHint": "I canali hashtag della community sono accessibili solo ai membri della community",
+  "community_invalidQrCode": "Codice QR della community non valido",
+  "community_alreadyMember": "Già membro",
+  "community_alreadyMemberMessage": "Sei già un membro di \"{name}\".",
+  "community_addPublicChannel": "Aggiungi Canale Pubblico della Comunità",
+  "community_addPublicChannelHint": "Aggiungi automaticamente il canale pubblico per questa community",
+  "community_noCommunities": "Nessun gruppo aggiunto finora",
+  "community_scanOrCreate": "Scansiona un codice QR o crea una community per iniziare.",
+  "community_manageCommunities": "Gestisci Comunità",
+  "community_delete": "Lascia la Comunità",
+  "community_deleteConfirm": "Uscire da \"{name}\"?",
+  "community_deleteChannelsWarning": "Questo eliminerà anche {count} canale/i e i loro messaggi.",
+  "@community_deleteChannelsWarning": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "community_deleted": "Hai lasciato la comunità \"{name}\"",
+  "community_addHashtagChannel": "Aggiungi Hashtag della Community",
+  "community_addHashtagChannelDesc": "Aggiungi un canale con hashtag per questa community",
+  "community_selectCommunity": "Seleziona Comunità",
+  "community_regularHashtag": "Hashtag regolare",
+  "community_regularHashtagDesc": "Hashtag pubblico (chiunque può unirsi)",
+  "community_communityHashtag": "Hashtag della Comunità",
+  "community_communityHashtagDesc": "Visibile solo ai membri della comunità",
+  "community_forCommunity": "Per {name}",
+  "@community_regenerateSecretConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_secretRegenerated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_secretUpdated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@community_scanToUpdateSecret": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "community_regenerateSecretConfirm": "Regenera la chiave segreta per \"{name}\"? Tutti i membri dovranno scansionare il nuovo codice QR per continuare a comunicare.",
+  "community_regenerateSecret": "Ri genera la chiave segreta",
+  "community_regenerate": "Rigenera",
+  "community_secretRegenerated": "Codice segreto rigenerato per \"{name}\"",
+  "community_updateSecret": "Aggiorna Segreto",
+  "community_secretUpdated": "Segreto aggiornato per \"{name}\"",
+  "community_scanToUpdateSecret": "Scansiona il nuovo codice QR per aggiornare il segreto di \"{name}\"",
+  "@contacts_pathTraceTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pathTrace_failed": "Tracciamento del percorso fallito.",
+  "pathTrace_you": "Tu",
+  "pathTrace_notAvailable": "Tracciamento del percorso non disponibile.",
+  "pathTrace_refreshTooltip": "Aggiorna Path Trace.",
+  "contacts_ping": "Ping",
+  "contacts_repeaterPathTrace": "Traccia percorso al ripetitore",
+  "contacts_roomPathTrace": "Traccia del percorso al server della stanza",
+  "contacts_pathTrace": "Traccia Percorso",
+  "contacts_repeaterPing": "Ripetitore ping",
+  "contacts_pathTraceTo": "Traccia percorso verso {name}",
+  "contacts_roomPing": "Ping al server della stanza",
+  "contacts_chatTraceRoute": "Traccia percorso path",
+  "appSettings_languageRu": "Russo",
+  "contacts_invalidAdvertFormat": "Dati di contatto non validi",
+  "appSettings_languageUk": "Ucraino",
+  "appSettings_enableMessageTracing": "Abilita tracciamento messaggi",
+  "appSettings_enableMessageTracingSubtitle": "Mostra metadati dettagliati su instradamento e tempi per i messaggi",
+  "contacts_zeroHopAdvert": "Annuncio Zero Hop",
+  "contacts_floodAdvert": "Annuncio alluvionale",
+  "contacts_copyAdvertToClipboard": "Copia Annuncio negli Appunti",
+  "contacts_addContactFromClipboard": "Aggiungere contatto dalla clipboard",
+  "contacts_clipboardEmpty": "La clipboard è vuota.",
+  "contacts_ShareContact": "Copia contatto negli Appunti",
+  "contacts_contactImported": "Il contatto è stato importato.",
+  "contacts_contactImportFailed": "Contatto non importato con successo.",
+  "contacts_zeroHopContactAdvertSent": "Inviato contatto tramite annuncio.",
+  "contacts_contactAdvertCopyFailed": "Copia dell'annuncio nella Clipboard non riuscita.",
+  "contacts_ShareContactZeroHop": "Condividi contatto tramite annuncio",
+  "contacts_zeroHopContactAdvertFailed": "Invio del contatto non riuscito.",
+  "contacts_contactAdvertCopied": "Annuncio copiato negli Appunti.",
+  "notification_activityTitle": "Attività MeshCore",
+  "notification_messagesCount": "{count} {count, plural, =1{messaggio} other{messaggi}}",
+  "notification_channelMessagesCount": "{count} {count, plural, =1{messaggio del canale} other{messaggi del canale}}",
+  "notification_newNodesCount": "{count} {count, plural, =1{nuovo nodo} other{nuovi nodi}}",
+  "notification_newTypeDiscovered": "Nuovo {contactType} scoperto",
+  "notification_receivedNewMessage": "Nuovo messaggio ricevuto",
+  "settings_gpxExportRepeaters": "Esporta ripetitori / server di stanza in GPX",
+  "settings_gpxExportContacts": "Esporta compagni in GPX",
+  "settings_gpxExportSuccess": "Esportazione del file GPX completata con successo.",
+  "settings_gpxExportNoContacts": "Nessun contatto da esportare.",
+  "settings_gpxExportNotAvailable": "Non supportato sul tuo dispositivo/Sistema Operativo",
+  "settings_gpxExportError": "Si è verificato un errore durante l'esportazione.",
+  "settings_gpxExportRepeatersSubtitle": "Esporta ripetitori / roomserver con una posizione in un file GPX.",
+  "settings_gpxExportContactsSubtitle": "Esporta i compagni con una posizione in un file GPX.",
+  "settings_gpxExportAll": "Esporta tutti i contatti in GPX",
+  "settings_gpxExportAllSubtitle": "Esporta tutti i contatti con una posizione in un file GPX.",
+  "settings_gpxExportChat": "Posizioni dei compagni",
+  "settings_gpxExportRepeatersRoom": "Posizioni del server ripetitore e della stanza",
+  "settings_gpxExportAllContacts": "Tutte le posizioni dei contatti",
+  "settings_gpxExportShareText": "Dati mappa esportati da Gulf Coast Mesh App",
+  "settings_gpxExportShareSubject": "Gulf Coast Mesh App esportazione dati mappa GPX",
+  "pathTrace_someHopsNoLocation": "Uno o più dei luppoli mancano di una posizione!",
+  "map_removeLast": "Rimuovi ultimo",
+  "map_pathTraceCancelled": "Tracciamento del percorso annullato.",
+  "pathTrace_clearTooltip": "Pulisci percorso",
+  "map_runTrace": "Esegui Path Trace",
+  "map_tapToAdd": "Tocca i nodi per aggiungerli al percorso.",
+  "scanner_bluetoothOff": "Il Bluetooth è disattivato.",
+  "scanner_bluetoothOffMessage": "Si prega di attivare il Bluetooth per effettuare la scansione dei dispositivi.",
+  "scanner_enableBluetooth": "Abilita il Bluetooth",
+  "snrIndicator_nearByRepeaters": "Ripetitori vicini",
+  "snrIndicator_lastSeen": "Ultimo accesso",
+  "chat_ShowAllPaths": "Mostra tutti i percorsi",
+  "settings_clientRepeat": "Ripetizione \"fuori dalla rete\"",
+  "settings_clientRepeatFreqWarning": "Per la comunicazione fuori rete, è necessario utilizzare frequenze di 433, 869 o 918 MHz.",
+  "settings_clientRepeatSubtitle": "Permetti a questo dispositivo di ripetere i pacchetti di rete per gli altri.",
+  "settings_aboutOpenMeteoAttribution": "Dati di elevazione LOS: Open-Meteo (CC BY 4.0)",
+  "appSettings_unitsTitle": "Unità",
+  "appSettings_unitsMetric": "Metrico (m/km)",
+  "appSettings_unitsImperial": "Imperiale (ft / mi)",
+  "map_lineOfSight": "Linea di vista",
+  "map_losScreenTitle": "Linea di vista",
+  "losSelectStartEnd": "Seleziona i nodi iniziali e finali per la LOS.",
+  "losRunFailed": "Controllo della linea di vista fallito: {error}",
+  "@losRunFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "losClearAllPoints": "Cancella tutti i punti",
+  "losRunToViewElevationProfile": "Eseguire LOS per visualizzare il profilo altimetrico",
+  "losMenuTitle": "Menù LOS",
+  "losMenuSubtitle": "Tocca i nodi o premi a lungo la mappa per punti personalizzati",
+  "losShowDisplayNodes": "Mostra i nodi di visualizzazione",
+  "losCustomPoints": "Punti personalizzati",
+  "losCustomPointLabel": "Personalizzato {index}",
+  "@losCustomPointLabel": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "losPointA": "Punto A",
+  "losPointB": "Punto B",
+  "losAntennaA": "Antenna A: {value} {unit}",
+  "@losAntennaA": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "losAntennaB": "Antenna B: {value} {unit}",
+  "@losAntennaB": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "losRun": "Esegui LOS",
+  "losNoElevationData": "Nessun dato di elevazione",
+  "losProfileClear": "{distance} {distanceUnit}, libera LOS, distanza minima {clearance} {heightUnit}",
+  "@losProfileClear": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      },
+      "distanceUnit": {
+        "type": "String"
+      },
+      "clearance": {
+        "type": "String"
+      },
+      "heightUnit": {
+        "type": "String"
+      }
+    }
+  },
+  "losProfileBlocked": "{distance} {distanceUnit}, bloccato da {obstruction} {heightUnit}",
+  "@losProfileBlocked": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      },
+      "distanceUnit": {
+        "type": "String"
+      },
+      "obstruction": {
+        "type": "String"
+      },
+      "heightUnit": {
+        "type": "String"
+      }
+    }
+  },
+  "losStatusChecking": "LOS: controllo...",
+  "losStatusNoData": "LOS: nessun dato",
+  "losStatusSummary": "LOS: {clear}/{total} libera, {blocked} bloccato, {unknown} sconosciuto",
+  "@losStatusSummary": {
+    "placeholders": {
+      "clear": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "blocked": {
+        "type": "int"
+      },
+      "unknown": {
+        "type": "int"
+      }
+    }
+  },
+  "losErrorElevationUnavailable": "Dati di elevazione non disponibili per uno o più campioni.",
+  "losErrorInvalidInput": "Dati punti/elevazione non validi per il calcolo della LOS.",
+  "losRenameCustomPoint": "Rinomina punto personalizzato",
+  "losPointName": "Nome del punto",
+  "losShowPanelTooltip": "Mostra il pannello LOS",
+  "losHidePanelTooltip": "Nascondi il pannello LOS",
+  "losElevationAttribution": "Dati di elevazione: Open-Meteo (CC BY 4.0)",
+  "chats_searchConversations": "Search conversations...",
+  "chats_noConversationsFound": "No conversations found",
+  "status_repeat": "Repeat",
+  "messageStatus_failed": "Failed",
+  "messageStatus_sending": "Sending...",
+  "messageStatus_retrying": "Retrying {retryCount}/{maxRetries}",
+  "@messageStatus_retrying": {
+    "placeholders": {
+      "retryCount": { "type": "int" },
+      "maxRetries": { "type": "int" }
+    }
+  },
+  "messageStatus_delivered": "Delivered",
+  "messageStatus_sent": "Sent",
+  "nav_analyzer": "Analyzer",
+  "appSettings_meshAnalyzer": "Show Mesh Analyzer tab",
+  "appSettings_meshAnalyzerSubtitle": "Live packet visualization dashboard",
+  "analyzer_title": "Mesh Analyzer",
+  "analyzer_pause": "Pause",
+  "analyzer_resume": "Resume",
+  "analyzer_clear": "Clear",
+  "analyzer_filterAll": "All",
+  "analyzer_filterDM": "DMs",
+  "analyzer_filterChannel": "Channels",
+  "analyzer_filterAdvert": "Adverts",
+  "analyzer_filterDiscovery": "Discovery",
+  "analyzer_noPackets": "No packets received yet",
+  "analyzer_noChats": "No conversations",
+  "analyzer_packets": "Packets",
+  "analyzer_chats": "Chats",
+  "analyzer_back": "Back",
+  "appSettings_nodeBlocking": "Blocca nodi",
+  "appSettings_nodeBlockingSubtitle": "Nascondi i nodi scelti da mappa, contatti e chat e silenzia i loro avvisi. Solo nell'app: nulla viene rimosso dalla radio.",
+  "appSettings_blockedNodes": "Nodi bloccati",
+  "appSettings_blockedNodesCount": "{count, plural, =0{Nessuno ancora bloccato} =1{1 nodo bloccato} other{{count} nodi bloccati}}",
+  "blockedNodes_title": "Nodi bloccati",
+  "blockedNodes_howItWorks": "Come funziona il blocco",
+  "blockedNodes_infoHidden": "Nascosti da mappa, contatti e chat",
+  "blockedNodes_infoMuted": "Nessun avviso per nuovi nodi né notifiche di messaggi da loro",
+  "blockedNodes_infoKept": "Nulla viene eliminato. Restano sulla radio companion e i loro messaggi vengono conservati",
+  "blockedNodes_infoRelay": "I ripetitori bloccati possono comunque inoltrare i tuoi messaggi sulla mesh",
+  "blockedNodes_infoChannels": "I loro messaggi nei canali continuano a essere visualizzati",
+  "blockedNodes_emptyTitle": "Nessun nodo bloccato",
+  "blockedNodes_emptyHint": "Tieni premuto un nodo in Contatti o sulla Mappa e scegli Blocca nodo.",
+  "blockedNodes_unblock": "Sblocca",
+  "blockedNodes_unblockAll": "Sblocca tutti",
+  "blockedNodes_unblockAllConfirm": "{count, plural, =1{Sbloccare 1 nodo? Tornerà visibile su mappa e nei contatti.} other{Sbloccare tutti i {count} nodi? Torneranno visibili su mappa e nei contatti.}}",
+  "blockedNodes_unknownNode": "Nodo sconosciuto",
+  "blockedNodes_blockedOn": "Bloccato il {date}",
+  "blockedNodes_blockAction": "Blocca nodo",
+  "blockedNodes_blockConfirmTitle": "Bloccare {name}?",
+  "blockedNodes_blockConfirmBody": "Sarà nascosto da mappa, contatti e chat e non riceverai avvisi né notifiche di messaggi da lui. Nulla viene eliminato dalla radio. Puoi sbloccarlo in qualsiasi momento in Impostazioni App > Sperimentale > Nodi bloccati.",
+  "blockedNodes_blockConfirmButton": "Blocca",
+  "blockedNodes_blocked": "{name} bloccato",
+  "blockedNodes_unblocked": "{name} sbloccato",
+  "blockedNodes_undo": "Annulla"
+}

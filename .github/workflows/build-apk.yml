@@ -1,0 +1,83 @@
+name: Build APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, bugs-features]
+  pull_request:
+
+concurrency:
+  group: build-apk-${{ github.ref }}
+  # Do not cancel an in-flight APK build when another push lands; that was
+  # killing ~12–16 min jobs before upload.
+  cancel-in-progress: false
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2.22.0
+        with:
+          channel: stable
+          # Skip Flutter/Gradle caches: saving them previously failed a successful
+          # APK build with "No space left on device".
+          cache: false
+
+      - name: Install Android SDK packages
+        run: |
+          set -euo pipefail
+          SDKMANAGER="${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" \
+            "ndk;28.2.13676358" \
+            "cmake;3.22.1" \
+            "platforms;android-36" \
+            "platforms;android-35" \
+            "platforms;android-34" \
+            "platforms;android-33" \
+            "build-tools;35.0.0" \
+            "platform-tools"
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Create Dart defines
+        env:
+          API_KEY: ${{ secrets.MESHMAPPER_API_KEY }}
+        run: |
+          python3 -c 'import json, os; json.dump({"API_KEY": os.environ.get("API_KEY", "")}, open(os.path.join(os.environ["RUNNER_TEMP"], "android-defines.json"), "w"))'
+
+      # Arm64 is the supported release target for physical phones.
+      - name: Build release APK (arm64)
+        run: |
+          flutter build apk --release --no-pub \
+            --target-platform=android-arm64 \
+            --dart-define-from-file="$RUNNER_TEMP/android-defines.json"
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v5
+        with:
+          name: gulf-coast-mesh-app-arm64-${{ github.sha }}
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Disk usage (debug)
+        if: always()
+        run: df -h
+
+      - name: Remove Dart defines
+        if: always()
+        run: rm -f "$RUNNER_TEMP/android-defines.json"
