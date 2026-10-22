@@ -52,7 +52,7 @@ profiles.
 
 ## Your choices
 
-Wardriving, ATAK location broadcasting, and link previews are all optional
+Wardriving, location broadcasting, and link previews are all optional
 and can be turned off in Settings. You can delete your local message
 history, contacts, and stored passwords/keys from within the app.
 
