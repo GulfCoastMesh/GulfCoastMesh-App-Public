@@ -1,6 +1,6 @@
 # Privacy Policy — Gulf Coast Mesh App
 
-_Last updated: August 23, 2026_
+_Last updated: October 22, 2026_
 
 Gulf Coast Mesh App ("the app") is a client for MeshCore LoRa mesh radio networks. This
 policy explains what data the app accesses, stores, and transmits.
@@ -19,23 +19,18 @@ policy explains what data the app accesses, stores, and transmits.
 ## Data the app sends over the mesh radio (not the internet)
 
 Messages, location shares, and node advertisements you choose to send are
-transmitted over LoRa radio to other mesh devices — this is the app's core
+transmitted over LoRa radio to other mesh devices; this is the app's core
 function. This is peer-to-peer radio communication, not a connection to any
 company's servers.
 
-If you turn on **ATAK location broadcasting** (off by default), your GPS
+If you turn on **location broadcasting** (off by default), your GPS
 location is periodically sent to other users on your selected mesh channel,
 and optionally attached to your node's own beacon. This is entirely within
-the mesh network you're part of — it is not sent to us or any internet
+the mesh network you're part of; it is not sent to us or any internet
 service.
 
 ## Data sent to internet services (only when you opt in)
 
-- **MeshMapper wardriving** (off by default, requires you to accept a
-  disclosure and manually start a session): if enabled, your device's public
-  key/identity, display name, app version, radio settings, and GPS location
-  are sent to meshmapper.net to build community coverage maps. You can use
-  an offline mode instead, which keeps this data on your device.
 - **MeshBuddy node-name reservation** (only if you use this optional
   feature): the email address, display name, and location you type into the
   reservation form are sent to our MeshBuddy service to reserve a unique
